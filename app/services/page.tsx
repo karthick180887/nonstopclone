@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site-data";
 import { whatsAppUrl } from "@/lib/utils";
 
 export const metadata = buildMetadata({
-  title: "Taxi Services | Nagma Tours and Travels One Way & Outstation Service",
+  title: "Taxi Services | droptaxi.live One Way & Outstation Service",
   description: "Reliable one way and outstation taxi services with transparent pricing, professional drivers and smooth long-distance travel experience.",
   path: "/services",
 });
@@ -14,7 +14,7 @@ export default function ServicesPage() {
     <section id="services" className="py-24 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-6">Why Choose Nagma Tours and Travels</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-6">Why Choose droptaxi.live</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Reliable one way and outstation taxi services with transparent pricing, professional drivers and smooth long-distance travel experience.
           </p>

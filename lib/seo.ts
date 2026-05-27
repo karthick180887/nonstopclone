@@ -39,7 +39,7 @@ export function buildMetadata({
 }
 
 export const homeMetadata = buildMetadata({
-  title: "Nagma Tours and Travels | One Way & Outstation Cab Service South India",
+  title: "droptaxi.live | One Way & Outstation Cab Service South India",
   description: SITE.description,
   path: "/",
 });

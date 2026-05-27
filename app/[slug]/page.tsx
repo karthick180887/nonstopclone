@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props) {
   const route = findOdRouteBySlug(slug);
   if (!route) return {};
   return buildMetadata({
-    title: `${route.from} to ${route.to} One Way Taxi | Nagma Tours and Travels`,
+    title: `${route.from} to ${route.to} One Way Taxi | droptaxi.live`,
     description: route.description,
     path: `/${slug}`,
   });
@@ -113,7 +113,7 @@ export default async function RoutePage({ params }: Props) {
           <div className="max-w-4xl mx-auto mt-10 text-gray-600 leading-relaxed text-sm md:text-base">
             <p>
               {route.from} to {route.to} one way taxi is one of the most preferred routes for outstation travel in
-              Tamil Nadu. Nagma Tours and Travels offers affordable drop taxi service with fixed pricing, no hidden charges
+              Tamil Nadu. droptaxi.live offers affordable drop taxi service with fixed pricing, no hidden charges
               and professional drivers. Our service is ideal for family trips, business travel and airport transfers.
               Book your one way cab now and enjoy a safe, comfortable and hassle-free journey.
             </p>
@@ -123,7 +123,7 @@ export default async function RoutePage({ params }: Props) {
 
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-[#0B6B2E] mb-6">Why Choose Nagma Tours and Travels?</h2>
+          <h2 className="text-2xl font-bold text-[#0B6B2E] mb-6">Why Choose droptaxi.live?</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-[#F9FAFB] p-6 rounded-2xl">
               <h3 className="font-semibold mb-2">One Way Pricing</h3>

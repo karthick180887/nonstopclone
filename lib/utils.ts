@@ -20,7 +20,7 @@ export function buildFareMessage(opts: {
   tripType?: string;
 }) {
   const lines = [
-    "Hi Nagma Tours and Travels,",
+    "Hi droptaxi.live,",
     "I need fare details for one way taxi.",
     opts.pickup ? `Pickup: ${opts.pickup}` : "Pickup: [Your Location]",
     opts.drop ? `Drop: ${opts.drop}` : "Drop: [Destination]",

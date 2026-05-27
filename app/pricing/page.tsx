@@ -2,8 +2,8 @@ import { buildMetadata } from "@/lib/seo";
 import PricingTabs from "@/components/PricingTabs";
 
 export const metadata = buildMetadata({
-  title: "Taxi Fare & Pricing | Nagma Tours and Travels One Way & Outstation Rates",
-  description: "Check Nagma Tours and Travels pricing for one way and outstation travel across Tamil Nadu, Kerala and Karnataka. Transparent fare details with no hidden charges and easy booking.",
+  title: "Taxi Fare & Pricing | droptaxi.live One Way & Outstation Rates",
+  description: "Check droptaxi.live pricing for one way and outstation travel across Tamil Nadu, Kerala and Karnataka. Transparent fare details with no hidden charges and easy booking.",
   path: "/pricing",
 });
 

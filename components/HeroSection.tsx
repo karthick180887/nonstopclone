@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 opacity-40">
         <Image
           src="/assets/banners/nonstop-hero.avif"
-          alt="One way taxi service in Tamil Nadu affordable outstation cab booking Nagma Tours and Travels"
+          alt="One way taxi service in Tamil Nadu affordable outstation cab booking droptaxi.live"
           fill
           className="object-cover"
           priority

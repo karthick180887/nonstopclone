@@ -188,7 +188,7 @@ export function WhyChooseSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <p className="text-sm font-semibold tracking-widest text-green-600 uppercase mb-3">
-            Why Choose Nagma Tours and Travels
+            Why Choose droptaxi.live
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B6B2E]">Reliable One Way & Outstation Taxi</h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -402,7 +402,7 @@ export function ProcessSection() {
     <section className="py-28 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <p className="text-sm font-semibold text-green-600 uppercase tracking-wider mb-3">Nagma Tours and Travels Process</p>
+          <p className="text-sm font-semibold text-green-600 uppercase tracking-wider mb-3">droptaxi.live Process</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1FAE4B]">Book Your One Way Taxi in 4 Simple Steps</h2>
           <p className="text-gray-600 mt-4 max-w-xl mx-auto">
             Simple booking with fixed fare, instant confirmation and verified drivers.

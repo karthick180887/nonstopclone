@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props) {
   const a = getCityLm(t);
   if (!a) return {};
   const r = a.city;
-  const title = `${r} One Way Taxi | Outstation Cab from ${r} | Nagma Tours and Travels`;
+  const title = `${r} One Way Taxi | Outstation Cab from ${r} | droptaxi.live`;
   const description = `Book one way taxi from ${r} with fixed per KM pricing and no return fare. Clean cars, professional drivers and instant booking support. Available for outstation, airport and long distance travel.`;
   return buildMetadata({
     title,
@@ -160,7 +160,7 @@ Please share fare and availability.`;
         </section>
 
         <section className="mt-16 max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-[#0B6B2E] mb-4">Why Choose Nagma Tours and Travels in {e}</h2>
+          <h2 className="text-2xl font-bold text-[#0B6B2E] mb-4">Why Choose droptaxi.live in {e}</h2>
           <ul className="text-gray-700 space-y-2">
             <li>• One way pricing based on distance travelled</li>
             <li>• Driver bata ₹400–₹500 per trip (Tempo round trip ₹800)</li>

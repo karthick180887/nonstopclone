@@ -47,7 +47,7 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
             <p>
               Planning a one way taxi journey? {post.title} covers route information, fare estimates,
-              travel time and booking tips with {`Nagma Tours and Travels`}. Call or WhatsApp for instant confirmation.
+              travel time and booking tips with {`droptaxi.live`}. Call or WhatsApp for instant confirmation.
             </p>
             {post.faqs?.map((faq) => (
               <div key={faq.question}>
