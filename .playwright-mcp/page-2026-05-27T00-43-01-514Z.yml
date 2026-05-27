@@ -1,0 +1,1367 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Facebook" [ref=e6] [cursor=pointer]:
+        - /url: https://www.facebook.com/nonstopdroptaxi
+        - img [ref=e7]
+      - link "Instagram" [ref=e9] [cursor=pointer]:
+        - /url: https://www.instagram.com/nonstopdroptaxi
+        - img [ref=e10]
+      - link "X" [ref=e13] [cursor=pointer]:
+        - /url: "#"
+        - text: 𝕏
+      - link "WhatsApp" [ref=e14] [cursor=pointer]:
+        - /url: https://wa.me/918122196198?text=Hi%20NonstopDropTaxi%2C%20I%20need%20a%20taxi%20booking
+        - img [ref=e15]
+      - link "+91 81221 96198" [ref=e17] [cursor=pointer]:
+        - /url: tel:+918122196198
+    - generic [ref=e20]:
+      - link "Nonstop Drop Taxi Home" [ref=e21] [cursor=pointer]:
+        - /url: /
+        - img "Nonstop Drop Taxi Logo" [ref=e22]
+        - generic [ref=e23]:
+          - paragraph [ref=e24]: Nonstop Drop Taxi
+          - paragraph [ref=e25]: One Way Taxi • Fixed Fare • 24/7 Booking
+      - navigation [ref=e26]:
+        - link "Home" [ref=e27] [cursor=pointer]:
+          - /url: /
+        - link "Company" [ref=e28] [cursor=pointer]:
+          - /url: /about
+        - link "Services" [ref=e29] [cursor=pointer]:
+          - /url: /services
+        - link "Fleet" [ref=e30] [cursor=pointer]:
+          - /url: /fleet
+        - link "Pricing" [ref=e31] [cursor=pointer]:
+          - /url: /pricing
+        - link "Contact" [ref=e32] [cursor=pointer]:
+          - /url: /contact
+      - link "Call Nonstop Drop Taxi" [ref=e34] [cursor=pointer]:
+        - /url: tel:+918122196198
+        - img [ref=e35]
+        - text: Book Now
+  - generic "Service highlights" [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e1099]: 🚖 Nonstop Drop Taxi • One Way & Outstation Service
+        - generic [ref=e1100]: ✔ Fixed Fare
+        - generic [ref=e1101]: ✔ No Hidden Charges
+        - generic [ref=e1102]: ✔ 24/7 Booking Support
+        - link "📞 +91 81221 96198" [ref=e52] [cursor=pointer]:
+          - /url: tel:+918122196198
+      - generic [ref=e53]:
+        - generic [ref=e1103]: 🚖 Nonstop Drop Taxi • One Way & Outstation Service
+        - generic [ref=e1104]: ✔ Fixed Fare
+        - generic [ref=e1105]: ✔ No Hidden Charges
+        - generic [ref=e1106]: ✔ 24/7 Booking Support
+        - link "📞 +91 81221 96198" [ref=e54] [cursor=pointer]:
+          - /url: tel:+918122196198
+  - main [ref=e55]:
+    - generic [ref=e56]:
+      - img "One way taxi service in Tamil Nadu affordable outstation cab booking Nonstop Drop Taxi" [ref=e57]
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - heading "Book One Way Taxi Across Tamil Nadu" [level=1] [ref=e1108]:
+            - text: Book One Way Taxi
+            - generic [ref=e1109]: Across Tamil Nadu
+          - paragraph [ref=e62]: Travel anywhere in Tamil Nadu with reliable one way taxi service. Fixed fare, clean vehicles, and professional drivers for safe outstation and airport rides.
+          - paragraph [ref=e63]: Fixed Fare • No Hidden Charges • 24/7 Booking Support
+          - generic [ref=e64]:
+            - link "Get Fare on WhatsApp" [ref=e65] [cursor=pointer]:
+              - /url: https://wa.me/918122196198?text=Hi%20Nonstop%20Drop%20Taxi%2C%0AI%20need%20fare%20details%20for%20one%20way%20taxi.%0APickup%3A%20%5BYour%20Location%5D%0ADrop%3A%20%5BDestination%5D%0ADate%3A%20%5BTravel%20Date%5D%0AVehicle%3A%20Sedan%0ATrip%20Type%3A%20One%20Way%0APlease%20share%20price%20and%20availability.
+              - img [ref=e66]
+              - text: Get Fare on WhatsApp
+            - link "Call Now" [ref=e68] [cursor=pointer]:
+              - /url: tel:+918122196198
+              - img [ref=e69]
+              - text: Call Now
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - heading "Quick Taxi Booking" [level=2] [ref=e74]
+            - paragraph [ref=e75]: One Way • Outstation • Airport Drop
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - text: Pickup Address
+              - textbox "Pickup Address" [ref=e78]:
+                - /placeholder: Enter pickup location
+            - generic [ref=e79]:
+              - text: Drop Address
+              - textbox "Drop Address" [ref=e80]:
+                - /placeholder: Enter drop location
+            - generic [ref=e81]:
+              - text: Full Name
+              - textbox "Full Name" [ref=e82]:
+                - /placeholder: Your name
+            - generic [ref=e83]:
+              - text: Mobile Number
+              - textbox "Mobile Number" [ref=e84]:
+                - /placeholder: 10-digit mobile
+            - generic [ref=e85]:
+              - text: Pickup Date
+              - textbox "Pickup Date" [ref=e86]
+            - generic [ref=e87]:
+              - text: Pickup Time
+              - combobox "Pickup Time" [ref=e88]:
+                - option "Select Time" [selected]
+                - option "12:00 AM"
+                - option "1:00 AM"
+                - option "2:00 AM"
+                - option "3:00 AM"
+                - option "4:00 AM"
+                - option "5:00 AM"
+                - option "6:00 AM"
+                - option "7:00 AM"
+                - option "8:00 AM"
+                - option "9:00 AM"
+                - option "10:00 AM"
+                - option "11:00 AM"
+                - option "12:00 PM"
+                - option "1:00 PM"
+                - option "2:00 PM"
+                - option "3:00 PM"
+                - option "4:00 PM"
+                - option "5:00 PM"
+                - option "6:00 PM"
+                - option "7:00 PM"
+                - option "8:00 PM"
+                - option "9:00 PM"
+                - option "10:00 PM"
+                - option "11:00 PM"
+          - generic [ref=e89]:
+            - text: Trip Type
+            - generic [ref=e90]:
+              - 'button "One Way Min 130 KM • Driver Bata: ₹400" [ref=e1110]':
+                - generic [ref=e1111]: One Way
+                - generic [ref=e92]: "Min 130 KM • Driver Bata: ₹400"
+              - 'button "Round Trip Min 250 KM/Day • Driver Bata: ₹400/Day" [ref=e1112]':
+                - generic [ref=e1113]: Round Trip
+                - generic [ref=e94]: "Min 250 KM/Day • Driver Bata: ₹400/Day"
+          - generic [ref=e95]:
+            - text: Select Vehicle
+            - generic [ref=e96]:
+              - button "SEDAN taxi for one way travel ₹14 / KM SEDAN" [ref=e97] [cursor=pointer]:
+                - img "SEDAN taxi for one way travel" [ref=e98]
+                - generic [ref=e99]: ₹14 / KM
+                - generic [ref=e100]: SEDAN
+              - button "ETIOS taxi for one way travel ₹14 / KM ETIOS" [ref=e101] [cursor=pointer]:
+                - img "ETIOS taxi for one way travel" [ref=e102]
+                - generic [ref=e103]: ₹14 / KM
+                - generic [ref=e104]: ETIOS
+              - button "SUV taxi for one way travel ₹19 / KM SUV" [ref=e105] [cursor=pointer]:
+                - img "SUV taxi for one way travel" [ref=e106]
+                - generic [ref=e107]: ₹19 / KM
+                - generic [ref=e108]: SUV
+              - button "INNOVA taxi for one way travel ₹20 / KM INNOVA" [ref=e109] [cursor=pointer]:
+                - img "INNOVA taxi for one way travel" [ref=e110]
+                - generic [ref=e111]: ₹20 / KM
+                - generic [ref=e112]: INNOVA
+              - button "INNOVA CRYSTA taxi for one way travel ₹23 / KM INNOVA CRYSTA" [ref=e113] [cursor=pointer]:
+                - img "INNOVA CRYSTA taxi for one way travel" [ref=e114]
+                - generic [ref=e115]: ₹23 / KM
+                - generic [ref=e116]: INNOVA CRYSTA
+          - button "Check Fare Instantly" [ref=e117]:
+            - img [ref=e118]
+            - text: Check Fare Instantly
+          - paragraph [ref=e120]: Fixed fare • No hidden charges • 24/7 support
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - heading "One Way Taxi Pricing & Round Trip Fare Details" [level=2] [ref=e124]
+        - paragraph [ref=e125]: Fixed fare • No hidden charges • Instant booking
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - generic [ref=e1114]: Best Price
+          - img "SEDAN taxi" [ref=e128]
+          - heading "SEDAN" [level=3] [ref=e129]
+          - paragraph [ref=e130]: ₹14/KM
+          - paragraph [ref=e131]: Driver Bata ₹400
+          - paragraph [ref=e132]: One-way toll charges
+        - generic [ref=e133]:
+          - generic [ref=e1115]: Most Booked
+          - img "ETIOS taxi" [ref=e134]
+          - heading "ETIOS" [level=3] [ref=e135]
+          - paragraph [ref=e136]: ₹14/KM
+          - paragraph [ref=e137]: Driver Bata ₹400
+          - paragraph [ref=e138]: One-way toll charges
+        - generic [ref=e139]:
+          - generic [ref=e1116]: Family
+          - img "SUV taxi" [ref=e140]
+          - heading "SUV" [level=3] [ref=e141]
+          - paragraph [ref=e142]: ₹19/KM
+          - paragraph [ref=e143]: Driver Bata ₹400
+          - paragraph [ref=e144]: One-way toll charges
+        - generic [ref=e145]:
+          - generic [ref=e1117]: Premium
+          - img "INNOVA taxi" [ref=e146]
+          - heading "INNOVA" [level=3] [ref=e147]
+          - paragraph [ref=e148]: ₹20/KM
+          - paragraph [ref=e149]: Driver Bata ₹400
+          - paragraph [ref=e150]: One-way toll charges
+        - generic [ref=e151]:
+          - generic [ref=e1118]: Luxury
+          - img "INNOVA CRYSTA taxi" [ref=e152]
+          - heading "INNOVA CRYSTA" [level=3] [ref=e153]
+          - paragraph [ref=e154]: ₹23/KM
+          - paragraph [ref=e155]: Driver Bata ₹400
+          - paragraph [ref=e156]: One-way toll charges
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - heading "Important Information" [level=3] [ref=e159]
+          - list [ref=e160]:
+            - listitem [ref=e161]: ✔ Toll, parking and permit charges are billed as per actual
+            - listitem [ref=e162]: ✔ Driver bata ₹400 applicable for all trips
+            - listitem [ref=e163]: ✔ Route or distance changes may affect final fare
+            - listitem [ref=e164]: ✔ Vehicle provided based on availability and trip type
+            - listitem [ref=e165]: ✔ Night travel and hill station charges may apply if required
+        - generic [ref=e166]:
+          - heading "One Way Travel Terms" [level=3] [ref=e167]
+          - list [ref=e168]:
+            - listitem [ref=e169]: ✔ Minimum 130 KM billing
+            - listitem [ref=e170]: ✔ ₹400 driver bata (fixed)
+            - listitem [ref=e171]: ✔ Toll & parking extra (actual)
+            - listitem [ref=e172]: ✔ No return fare charged
+            - listitem [ref=e173]: ✔ Ideal for city-to-city drop trips
+        - generic [ref=e174]:
+          - heading "Round Trip Travel Terms" [level=3] [ref=e175]
+          - list [ref=e176]:
+            - listitem [ref=e177]: ✔ Minimum 250 KM per day
+            - listitem [ref=e178]: ✔ ₹400 driver bata per day
+            - listitem [ref=e179]: ✔ Flexible return schedule
+            - listitem [ref=e180]: ✔ Extra KM charged separately
+            - listitem [ref=e181]: ✔ Best for multi-day trips
+    - generic [ref=e183]:
+      - generic [ref=e184]:
+        - paragraph [ref=e185]: Popular Routes
+        - heading "One Way Taxi Routes & Fare Details" [level=2] [ref=e186]
+        - paragraph [ref=e187]: Fixed fare • No hidden charges • Instant booking
+      - generic [ref=e188]:
+        - article [ref=e189]:
+          - generic [ref=e190]:
+            - heading "Chennai → Madurai" [level=3] [ref=e191]
+            - paragraph [ref=e192]: 458 km • 7h 30m
+            - paragraph [ref=e193]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e194]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e195]: ₹6,812
+            - paragraph [ref=e196]: Estimated one-way fare
+            - generic [ref=e197]:
+              - link "Check Fare →" [ref=e198] [cursor=pointer]:
+                - /url: /chennai-to-madurai-taxi
+              - link "WhatsApp" [ref=e199] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Madurai
+                - img [ref=e200]
+                - text: WhatsApp
+            - link "View trip details" [ref=e202] [cursor=pointer]:
+              - /url: /chennai-to-madurai-taxi
+        - article [ref=e203]:
+          - generic [ref=e204]:
+            - heading "Chennai → Coimbatore" [level=3] [ref=e205]
+            - paragraph [ref=e206]: 500 km • 8h
+            - paragraph [ref=e207]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e208]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e209]: ₹7,400
+            - paragraph [ref=e210]: Estimated one-way fare
+            - generic [ref=e211]:
+              - link "Check Fare →" [ref=e212] [cursor=pointer]:
+                - /url: /chennai-to-coimbatore-taxi
+              - link "WhatsApp" [ref=e213] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Coimbatore
+                - img [ref=e214]
+                - text: WhatsApp
+            - link "View trip details" [ref=e216] [cursor=pointer]:
+              - /url: /chennai-to-coimbatore-taxi
+        - article [ref=e217]:
+          - generic [ref=e218]:
+            - heading "Chennai → Salem" [level=3] [ref=e219]
+            - paragraph [ref=e220]: 340 km • 5h 30m
+            - paragraph [ref=e221]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e222]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e223]: ₹5,160
+            - paragraph [ref=e224]: Estimated one-way fare
+            - generic [ref=e225]:
+              - link "Check Fare →" [ref=e226] [cursor=pointer]:
+                - /url: /chennai-to-salem-taxi
+              - link "WhatsApp" [ref=e227] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Salem
+                - img [ref=e228]
+                - text: WhatsApp
+            - link "View trip details" [ref=e230] [cursor=pointer]:
+              - /url: /chennai-to-salem-taxi
+        - article [ref=e231]:
+          - generic [ref=e232]:
+            - heading "Chennai → Trichy" [level=3] [ref=e233]
+            - paragraph [ref=e234]: 320 km • 5h
+            - paragraph [ref=e235]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e236]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e237]: ₹4,880
+            - paragraph [ref=e238]: Estimated one-way fare
+            - generic [ref=e239]:
+              - link "Check Fare →" [ref=e240] [cursor=pointer]:
+                - /url: /chennai-to-trichy-taxi
+              - link "WhatsApp" [ref=e241] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Trichy
+                - img [ref=e242]
+                - text: WhatsApp
+            - link "View trip details" [ref=e244] [cursor=pointer]:
+              - /url: /chennai-to-trichy-taxi
+        - article [ref=e245]:
+          - generic [ref=e246]:
+            - heading "Chennai → Bangalore" [level=3] [ref=e247]
+            - paragraph [ref=e248]: 348 km • 6h
+            - paragraph [ref=e249]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e250]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e251]: ₹5,272
+            - paragraph [ref=e252]: Estimated one-way fare
+            - generic [ref=e253]:
+              - link "Check Fare →" [ref=e254] [cursor=pointer]:
+                - /url: /chennai-to-bangalore-taxi
+              - link "WhatsApp" [ref=e255] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Bangalore
+                - img [ref=e256]
+                - text: WhatsApp
+            - link "View trip details" [ref=e258] [cursor=pointer]:
+              - /url: /chennai-to-bangalore-taxi
+        - article [ref=e259]:
+          - generic [ref=e260]:
+            - heading "Chennai → Pondicherry" [level=3] [ref=e261]
+            - paragraph [ref=e262]: 150 km • 3h
+            - paragraph [ref=e263]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e264]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e265]: ₹2,500
+            - paragraph [ref=e266]: Estimated one-way fare
+            - generic [ref=e267]:
+              - link "Check Fare →" [ref=e268] [cursor=pointer]:
+                - /url: /chennai-to-pondicherry-taxi
+              - link "WhatsApp" [ref=e269] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Pondicherry
+                - img [ref=e270]
+                - text: WhatsApp
+            - link "View trip details" [ref=e272] [cursor=pointer]:
+              - /url: /chennai-to-pondicherry-taxi
+        - article [ref=e273]:
+          - generic [ref=e274]:
+            - heading "Chennai → Vellore" [level=3] [ref=e275]
+            - paragraph [ref=e276]: 140 km • 3h
+            - paragraph [ref=e277]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e278]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e279]: ₹2,360
+            - paragraph [ref=e280]: Estimated one-way fare
+            - generic [ref=e281]:
+              - link "Check Fare →" [ref=e282] [cursor=pointer]:
+                - /url: /chennai-to-vellore-taxi
+              - link "WhatsApp" [ref=e283] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Vellore
+                - img [ref=e284]
+                - text: WhatsApp
+            - link "View trip details" [ref=e286] [cursor=pointer]:
+              - /url: /chennai-to-vellore-taxi
+        - article [ref=e287]:
+          - generic [ref=e288]:
+            - heading "Chennai → Tirupati" [level=3] [ref=e289]
+            - paragraph [ref=e290]: 135 km • 3h
+            - paragraph [ref=e291]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e292]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e293]: ₹2,290
+            - paragraph [ref=e294]: Estimated one-way fare
+            - generic [ref=e295]:
+              - link "Check Fare →" [ref=e296] [cursor=pointer]:
+                - /url: /chennai-to-tirupati-taxi
+              - link "WhatsApp" [ref=e297] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Tirupati
+                - img [ref=e298]
+                - text: WhatsApp
+            - link "View trip details" [ref=e300] [cursor=pointer]:
+              - /url: /chennai-to-tirupati-taxi
+        - article [ref=e301]:
+          - generic [ref=e302]:
+            - heading "Chennai → Ooty" [level=3] [ref=e303]
+            - paragraph [ref=e304]: 550 km • 10h
+            - paragraph [ref=e305]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e306]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e307]: ₹8,100
+            - paragraph [ref=e308]: Estimated one-way fare
+            - generic [ref=e309]:
+              - link "Check Fare →" [ref=e310] [cursor=pointer]:
+                - /url: /chennai-to-ooty-taxi
+              - link "WhatsApp" [ref=e311] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Ooty
+                - img [ref=e312]
+                - text: WhatsApp
+            - link "View trip details" [ref=e314] [cursor=pointer]:
+              - /url: /chennai-to-ooty-taxi
+        - article [ref=e315]:
+          - generic [ref=e316]:
+            - heading "Chennai → Kanchipuram" [level=3] [ref=e317]
+            - paragraph [ref=e318]: 75 km • 2h
+            - paragraph [ref=e319]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e320]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e321]: ₹2,220
+            - paragraph [ref=e322]: Estimated one-way fare
+            - generic [ref=e323]:
+              - link "Check Fare →" [ref=e324] [cursor=pointer]:
+                - /url: /chennai-to-kanchipuram-taxi
+              - link "WhatsApp" [ref=e325] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Chennai%20to%20Kanchipuram
+                - img [ref=e326]
+                - text: WhatsApp
+            - link "View trip details" [ref=e328] [cursor=pointer]:
+              - /url: /chennai-to-kanchipuram-taxi
+        - article [ref=e329]:
+          - generic [ref=e330]:
+            - heading "Coimbatore → Ooty" [level=3] [ref=e331]
+            - paragraph [ref=e332]: 90 km • 2h 30m
+            - paragraph [ref=e333]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e334]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e335]: ₹2,220
+            - paragraph [ref=e336]: Estimated one-way fare
+            - generic [ref=e337]:
+              - link "Check Fare →" [ref=e338] [cursor=pointer]:
+                - /url: /coimbatore-to-ooty-taxi
+              - link "WhatsApp" [ref=e339] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Coimbatore%20to%20Ooty
+                - img [ref=e340]
+                - text: WhatsApp
+            - link "View trip details" [ref=e342] [cursor=pointer]:
+              - /url: /coimbatore-to-ooty-taxi
+        - article [ref=e343]:
+          - generic [ref=e344]:
+            - heading "Coimbatore → Bangalore" [level=3] [ref=e345]
+            - paragraph [ref=e346]: 360 km • 6h
+            - paragraph [ref=e347]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e348]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e349]: ₹5,440
+            - paragraph [ref=e350]: Estimated one-way fare
+            - generic [ref=e351]:
+              - link "Check Fare →" [ref=e352] [cursor=pointer]:
+                - /url: /coimbatore-to-bangalore-taxi
+              - link "WhatsApp" [ref=e353] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Coimbatore%20to%20Bangalore
+                - img [ref=e354]
+                - text: WhatsApp
+            - link "View trip details" [ref=e356] [cursor=pointer]:
+              - /url: /coimbatore-to-bangalore-taxi
+        - article [ref=e357]:
+          - generic [ref=e358]:
+            - heading "Coimbatore → Kodaikanal" [level=3] [ref=e359]
+            - paragraph [ref=e360]: 175 km • 3h 30m
+            - paragraph [ref=e361]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e362]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e363]: ₹2,850
+            - paragraph [ref=e364]: Estimated one-way fare
+            - generic [ref=e365]:
+              - link "Check Fare →" [ref=e366] [cursor=pointer]:
+                - /url: /coimbatore-to-kodaikanal-taxi
+              - link "WhatsApp" [ref=e367] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Coimbatore%20to%20Kodaikanal
+                - img [ref=e368]
+                - text: WhatsApp
+            - link "View trip details" [ref=e370] [cursor=pointer]:
+              - /url: /coimbatore-to-kodaikanal-taxi
+        - article [ref=e371]:
+          - generic [ref=e372]:
+            - heading "Coimbatore → Cochin" [level=3] [ref=e373]
+            - paragraph [ref=e374]: 190 km • 4h 30m
+            - paragraph [ref=e375]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e376]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e377]: ₹3,360
+            - paragraph [ref=e378]: Estimated one-way fare
+            - generic [ref=e379]:
+              - link "Check Fare →" [ref=e380] [cursor=pointer]:
+                - /url: /coimbatore-to-cochin-taxi
+              - link "WhatsApp" [ref=e381] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Coimbatore%20to%20Cochin
+                - img [ref=e382]
+                - text: WhatsApp
+            - link "View trip details" [ref=e384] [cursor=pointer]:
+              - /url: /coimbatore-to-cochin-taxi
+        - article [ref=e385]:
+          - generic [ref=e386]:
+            - heading "Madurai → Rameswaram" [level=3] [ref=e387]
+            - paragraph [ref=e388]: 165 km • 3h
+            - paragraph [ref=e389]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e390]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e391]: ₹2,710
+            - paragraph [ref=e392]: Estimated one-way fare
+            - generic [ref=e393]:
+              - link "Check Fare →" [ref=e394] [cursor=pointer]:
+                - /url: /madurai-to-rameswaram-taxi
+              - link "WhatsApp" [ref=e395] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Madurai%20to%20Rameswaram
+                - img [ref=e396]
+                - text: WhatsApp
+            - link "View trip details" [ref=e398] [cursor=pointer]:
+              - /url: /madurai-to-rameswaram-taxi
+        - article [ref=e399]:
+          - generic [ref=e400]:
+            - heading "Madurai → Coimbatore" [level=3] [ref=e401]
+            - paragraph [ref=e402]: 210 km • 4h
+            - paragraph [ref=e403]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e404]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e405]: ₹3,340
+            - paragraph [ref=e406]: Estimated one-way fare
+            - generic [ref=e407]:
+              - link "Check Fare →" [ref=e408] [cursor=pointer]:
+                - /url: /madurai-to-coimbatore-taxi
+              - link "WhatsApp" [ref=e409] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Madurai%20to%20Coimbatore
+                - img [ref=e410]
+                - text: WhatsApp
+            - link "View trip details" [ref=e412] [cursor=pointer]:
+              - /url: /madurai-to-coimbatore-taxi
+        - article [ref=e413]:
+          - generic [ref=e414]:
+            - heading "Madurai → Kumbakonam" [level=3] [ref=e415]
+            - paragraph [ref=e416]: 210 km • 4h
+            - paragraph [ref=e417]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e418]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e419]: ₹3,340
+            - paragraph [ref=e420]: Estimated one-way fare
+            - generic [ref=e421]:
+              - link "Check Fare →" [ref=e422] [cursor=pointer]:
+                - /url: /madurai-to-kumbakonam-taxi
+              - link "WhatsApp" [ref=e423] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Madurai%20to%20Kumbakonam
+                - img [ref=e424]
+                - text: WhatsApp
+            - link "View trip details" [ref=e426] [cursor=pointer]:
+              - /url: /madurai-to-kumbakonam-taxi
+        - article [ref=e427]:
+          - generic [ref=e428]:
+            - heading "Bangalore → Mysore" [level=3] [ref=e429]
+            - paragraph [ref=e430]: 150 km • 3h
+            - paragraph [ref=e431]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e432]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e433]: ₹2,500
+            - paragraph [ref=e434]: Estimated one-way fare
+            - generic [ref=e435]:
+              - link "Check Fare →" [ref=e436] [cursor=pointer]:
+                - /url: /bangalore-to-mysore-taxi
+              - link "WhatsApp" [ref=e437] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Bangalore%20to%20Mysore
+                - img [ref=e438]
+                - text: WhatsApp
+            - link "View trip details" [ref=e440] [cursor=pointer]:
+              - /url: /bangalore-to-mysore-taxi
+        - article [ref=e441]:
+          - generic [ref=e442]:
+            - heading "Bangalore → Ooty" [level=3] [ref=e443]
+            - paragraph [ref=e444]: 270 km • 5h
+            - paragraph [ref=e445]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e446]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e447]: ₹4,180
+            - paragraph [ref=e448]: Estimated one-way fare
+            - generic [ref=e449]:
+              - link "Check Fare →" [ref=e450] [cursor=pointer]:
+                - /url: /bangalore-to-ooty-taxi
+              - link "WhatsApp" [ref=e451] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Bangalore%20to%20Ooty
+                - img [ref=e452]
+                - text: WhatsApp
+            - link "View trip details" [ref=e454] [cursor=pointer]:
+              - /url: /bangalore-to-ooty-taxi
+        - article [ref=e455]:
+          - generic [ref=e456]:
+            - heading "Trichy → Madurai" [level=3] [ref=e457]
+            - paragraph [ref=e458]: 135 km • 2h 30m
+            - paragraph [ref=e459]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e460]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e461]: ₹2,290
+            - paragraph [ref=e462]: Estimated one-way fare
+            - generic [ref=e463]:
+              - link "Check Fare →" [ref=e464] [cursor=pointer]:
+                - /url: /trichy-to-madurai-taxi
+              - link "WhatsApp" [ref=e465] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Trichy%20to%20Madurai
+                - img [ref=e466]
+                - text: WhatsApp
+            - link "View trip details" [ref=e468] [cursor=pointer]:
+              - /url: /trichy-to-madurai-taxi
+        - article [ref=e469]:
+          - generic [ref=e470]:
+            - heading "Salem → Coimbatore" [level=3] [ref=e471]
+            - paragraph [ref=e472]: 160 km • 3h
+            - paragraph [ref=e473]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e474]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e475]: ₹2,640
+            - paragraph [ref=e476]: Estimated one-way fare
+            - generic [ref=e477]:
+              - link "Check Fare →" [ref=e478] [cursor=pointer]:
+                - /url: /salem-to-coimbatore-taxi
+              - link "WhatsApp" [ref=e479] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Salem%20to%20Coimbatore
+                - img [ref=e480]
+                - text: WhatsApp
+            - link "View trip details" [ref=e482] [cursor=pointer]:
+              - /url: /salem-to-coimbatore-taxi
+        - article [ref=e483]:
+          - generic [ref=e484]:
+            - heading "Salem → Bangalore" [level=3] [ref=e485]
+            - paragraph [ref=e486]: 200 km • 4h
+            - paragraph [ref=e487]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e488]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e489]: ₹3,200
+            - paragraph [ref=e490]: Estimated one-way fare
+            - generic [ref=e491]:
+              - link "Check Fare →" [ref=e492] [cursor=pointer]:
+                - /url: /salem-to-bangalore-taxi
+              - link "WhatsApp" [ref=e493] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Salem%20to%20Bangalore
+                - img [ref=e494]
+                - text: WhatsApp
+            - link "View trip details" [ref=e496] [cursor=pointer]:
+              - /url: /salem-to-bangalore-taxi
+        - article [ref=e497]:
+          - generic [ref=e498]:
+            - heading "Trichy → Thanjavur" [level=3] [ref=e499]
+            - paragraph [ref=e500]: 60 km • 1h 30m
+            - paragraph [ref=e501]: ₹14/km • Driver allowance ₹400 included • Toll extra
+            - paragraph [ref=e502]: ✓ Fixed fare • ✓ No hidden charges
+            - paragraph [ref=e503]: ₹2,220
+            - paragraph [ref=e504]: Estimated one-way fare
+            - generic [ref=e505]:
+              - link "Check Fare →" [ref=e506] [cursor=pointer]:
+                - /url: /trichy-to-thanjavur-taxi
+              - link "WhatsApp" [ref=e507] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20Trichy%20to%20Thanjavur
+                - img [ref=e508]
+                - text: WhatsApp
+            - link "View trip details" [ref=e510] [cursor=pointer]:
+              - /url: /trichy-to-thanjavur-taxi
+    - generic [ref=e512]:
+      - generic [ref=e513]:
+        - heading "One Way Taxi Fare by Vehicle – Transparent Pricing" [level=2] [ref=e514]
+        - paragraph [ref=e515]: Transparent taxi pricing • One way & round trip fares • ₹400 driver allowance • Toll extra
+      - generic [ref=e516]:
+        - generic [ref=e517]:
+          - text: Best Price
+          - img "Sedan" [ref=e518]
+          - heading "Sedan" [level=3] [ref=e519]
+          - paragraph [ref=e520]: ₹14/KM One Way
+          - paragraph [ref=e521]: ₹13/KM Round Trip
+          - paragraph [ref=e522]: 1–4 • 2 Bags
+          - generic [ref=e523]:
+            - link "Call" [ref=e524] [cursor=pointer]:
+              - /url: tel:+918122196198
+            - link "WhatsApp" [ref=e525] [cursor=pointer]:
+              - /url: https://wa.me/918122196198?text=Hi%20Nonstop%20Drop%20Taxi%2C%0AI%20need%20fare%20details%20for%20one%20way%20taxi.%0APickup%3A%20%5BYour%20Location%5D%0ADrop%3A%20%5BDestination%5D%0ADate%3A%20%5BTravel%20Date%5D%0AVehicle%3A%20Sedan%0ATrip%20Type%3A%20One%20Way%0APlease%20share%20price%20and%20availability.
+              - img [ref=e526]
+              - text: WhatsApp
+        - generic [ref=e528]:
+          - text: Most Booked
+          - img "Etios" [ref=e529]
+          - heading "Etios" [level=3] [ref=e530]
+          - paragraph [ref=e531]: ₹14/KM One Way
+          - paragraph [ref=e532]: ₹13/KM Round Trip
+          - paragraph [ref=e533]: 1–4 • 2 Bags
+          - generic [ref=e534]:
+            - link "Call" [ref=e535] [cursor=pointer]:
+              - /url: tel:+918122196198
+            - link "WhatsApp" [ref=e536] [cursor=pointer]:
+              - /url: https://wa.me/918122196198?text=Hi%20Nonstop%20Drop%20Taxi%2C%0AI%20need%20fare%20details%20for%20one%20way%20taxi.%0APickup%3A%20%5BYour%20Location%5D%0ADrop%3A%20%5BDestination%5D%0ADate%3A%20%5BTravel%20Date%5D%0AVehicle%3A%20Etios%0ATrip%20Type%3A%20One%20Way%0APlease%20share%20price%20and%20availability.
+              - img [ref=e537]
+              - text: WhatsApp
+        - generic [ref=e539]:
+          - text: Family
+          - img "SUV" [ref=e540]
+          - heading "SUV" [level=3] [ref=e541]
+          - paragraph [ref=e542]: ₹19/KM One Way
+          - paragraph [ref=e543]: ₹18/KM Round Trip
+          - paragraph [ref=e544]: 1–6 • 4 Bags
+          - generic [ref=e545]:
+            - link "Call" [ref=e546] [cursor=pointer]:
+              - /url: tel:+918122196198
+            - link "WhatsApp" [ref=e547] [cursor=pointer]:
+              - /url: https://wa.me/918122196198?text=Hi%20Nonstop%20Drop%20Taxi%2C%0AI%20need%20fare%20details%20for%20one%20way%20taxi.%0APickup%3A%20%5BYour%20Location%5D%0ADrop%3A%20%5BDestination%5D%0ADate%3A%20%5BTravel%20Date%5D%0AVehicle%3A%20SUV%0ATrip%20Type%3A%20One%20Way%0APlease%20share%20price%20and%20availability.
+              - img [ref=e548]
+              - text: WhatsApp
+        - generic [ref=e550]:
+          - text: Premium
+          - img "Innova" [ref=e551]
+          - heading "Innova" [level=3] [ref=e552]
+          - paragraph [ref=e553]: ₹20/KM One Way
+          - paragraph [ref=e554]: ₹19/KM Round Trip
+          - paragraph [ref=e555]: 1–7 • 3 Bags
+          - generic [ref=e556]:
+            - link "Call" [ref=e557] [cursor=pointer]:
+              - /url: tel:+918122196198
+            - link "WhatsApp" [ref=e558] [cursor=pointer]:
+              - /url: https://wa.me/918122196198?text=Hi%20Nonstop%20Drop%20Taxi%2C%0AI%20need%20fare%20details%20for%20one%20way%20taxi.%0APickup%3A%20%5BYour%20Location%5D%0ADrop%3A%20%5BDestination%5D%0ADate%3A%20%5BTravel%20Date%5D%0AVehicle%3A%20Innova%0ATrip%20Type%3A%20One%20Way%0APlease%20share%20price%20and%20availability.
+              - img [ref=e559]
+              - text: WhatsApp
+        - generic [ref=e561]:
+          - text: Luxury
+          - img "Innova Crysta" [ref=e562]
+          - heading "Innova Crysta" [level=3] [ref=e563]
+          - paragraph [ref=e564]: ₹23/KM One Way
+          - paragraph [ref=e565]: ₹22/KM Round Trip
+          - paragraph [ref=e566]: 1–7 • 3 Bags
+          - generic [ref=e567]:
+            - link "Call" [ref=e568] [cursor=pointer]:
+              - /url: tel:+918122196198
+            - link "WhatsApp" [ref=e569] [cursor=pointer]:
+              - /url: https://wa.me/918122196198?text=Hi%20Nonstop%20Drop%20Taxi%2C%0AI%20need%20fare%20details%20for%20one%20way%20taxi.%0APickup%3A%20%5BYour%20Location%5D%0ADrop%3A%20%5BDestination%5D%0ADate%3A%20%5BTravel%20Date%5D%0AVehicle%3A%20Innova%20Crysta%0ATrip%20Type%3A%20One%20Way%0APlease%20share%20price%20and%20availability.
+              - img [ref=e570]
+              - text: WhatsApp
+    - generic [ref=e573]:
+      - generic [ref=e574]:
+        - heading "Taxi Services Available Across Tamil Nadu & South India" [level=2] [ref=e575]
+        - paragraph [ref=e576]: Book one way and outstation taxi services in major cities with fixed pricing, professional drivers and 24/7 support.
+      - generic [ref=e577]:
+        - link "Chennai One way taxi • Outstation • Airport drop View Taxi in Chennai →" [ref=e578] [cursor=pointer]:
+          - /url: /city/chennai
+          - heading "Chennai" [level=3] [ref=e579]
+          - paragraph [ref=e580]: One way taxi • Outstation • Airport drop
+          - generic [ref=e581]: View Taxi in Chennai →
+        - link "Coimbatore One way taxi • Outstation • Airport drop View Taxi in Coimbatore →" [ref=e582] [cursor=pointer]:
+          - /url: /city/coimbatore
+          - heading "Coimbatore" [level=3] [ref=e583]
+          - paragraph [ref=e584]: One way taxi • Outstation • Airport drop
+          - generic [ref=e585]: View Taxi in Coimbatore →
+        - link "Madurai One way taxi • Outstation • Airport drop View Taxi in Madurai →" [ref=e586] [cursor=pointer]:
+          - /url: /city/madurai
+          - heading "Madurai" [level=3] [ref=e587]
+          - paragraph [ref=e588]: One way taxi • Outstation • Airport drop
+          - generic [ref=e589]: View Taxi in Madurai →
+        - link "Salem One way taxi • Outstation • Airport drop View Taxi in Salem →" [ref=e590] [cursor=pointer]:
+          - /url: /city/salem
+          - heading "Salem" [level=3] [ref=e591]
+          - paragraph [ref=e592]: One way taxi • Outstation • Airport drop
+          - generic [ref=e593]: View Taxi in Salem →
+        - link "Tiruchirappalli One way taxi • Outstation • Airport drop View Taxi in Tiruchirappalli →" [ref=e594] [cursor=pointer]:
+          - /url: /city/tiruchirappalli
+          - heading "Tiruchirappalli" [level=3] [ref=e595]
+          - paragraph [ref=e596]: One way taxi • Outstation • Airport drop
+          - generic [ref=e597]: View Taxi in Tiruchirappalli →
+        - link "Tirunelveli One way taxi • Outstation • Airport drop View Taxi in Tirunelveli →" [ref=e598] [cursor=pointer]:
+          - /url: /city/tirunelveli
+          - heading "Tirunelveli" [level=3] [ref=e599]
+          - paragraph [ref=e600]: One way taxi • Outstation • Airport drop
+          - generic [ref=e601]: View Taxi in Tirunelveli →
+      - generic [ref=e602]:
+        - link "Ooty" [ref=e603] [cursor=pointer]:
+          - /url: /city/nilgiris
+        - link "Kodaikanal" [ref=e604] [cursor=pointer]:
+          - /url: /city/kodaikanal
+        - link "Munnar" [ref=e605] [cursor=pointer]:
+          - /url: /city/munnar
+        - link "Pondicherry" [ref=e606] [cursor=pointer]:
+          - /url: /city/puducherry
+        - link "Kanyakumari" [ref=e607] [cursor=pointer]:
+          - /url: /city/kanyakumari
+        - link "Alleppey" [ref=e608] [cursor=pointer]:
+          - /url: /city/alleppey
+        - link "Cochin" [ref=e609] [cursor=pointer]:
+          - /url: /city/cochin
+        - link "Mysore" [ref=e610] [cursor=pointer]:
+          - /url: /city/mysore
+        - link "Trichy" [ref=e611] [cursor=pointer]:
+          - /url: /city/tiruchirappalli
+        - link "Thanjavur" [ref=e612] [cursor=pointer]:
+          - /url: /city/thanjavur
+        - link "Salem" [ref=e613] [cursor=pointer]:
+          - /url: /city/salem
+        - link "Tirunelveli" [ref=e614] [cursor=pointer]:
+          - /url: /city/tirunelveli
+        - link "Kutralam" [ref=e615] [cursor=pointer]:
+          - /url: /city/kutralam
+        - link "Velankanni" [ref=e616] [cursor=pointer]:
+          - /url: /city/velankanni
+    - generic [ref=e618]:
+      - generic [ref=e619]:
+        - paragraph [ref=e620]: Why Choose Nonstop Drop Taxi
+        - heading "Reliable One Way & Outstation Taxi" [level=2] [ref=e621]
+        - paragraph [ref=e622]: Book intercity taxi with transparent pricing, professional drivers and smooth travel experience across Tamil Nadu.
+      - generic [ref=e623]:
+        - generic [ref=e624]:
+          - heading "Well Maintained Cars" [level=3] [ref=e625]
+          - paragraph [ref=e626]: Clean sedan and SUV options for long distance travel.
+        - generic [ref=e627]:
+          - heading "Flexible Pickup" [level=3] [ref=e628]
+          - paragraph [ref=e629]: Schedule your ride anytime based on your convenience.
+        - generic [ref=e630]:
+          - heading "Verified Drivers" [level=3] [ref=e631]
+          - paragraph [ref=e632]: Experienced drivers focused on safe travel.
+        - generic [ref=e633]:
+          - heading "Wide Route Coverage" [level=3] [ref=e634]
+          - paragraph [ref=e635]: Serving major cities and destinations across South India.
+    - generic [ref=e637]:
+      - generic [ref=e638]:
+        - heading "One Way Taxi Destinations Across Tamil Nadu, Kerala & Karnataka" [level=2] [ref=e639]
+        - paragraph [ref=e640]: One way and outstation taxi services with transparent pricing and easy booking.
+      - generic [ref=e641]:
+        - generic [ref=e642]:
+          - img "Chennai one way taxi destination" [ref=e643]
+          - generic [ref=e644]:
+            - text: city
+            - heading "Chennai One Way Taxi" [level=3] [ref=e645]
+            - generic [ref=e646]:
+              - link "Call" [ref=e647] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e648] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Chennai
+        - generic [ref=e649]:
+          - img "Bangalore one way taxi destination" [ref=e650]
+          - generic [ref=e651]:
+            - text: business
+            - heading "Bangalore One Way Taxi" [level=3] [ref=e652]
+            - generic [ref=e653]:
+              - link "Call" [ref=e654] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e655] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Bangalore
+        - generic [ref=e656]:
+          - img "Coimbatore one way taxi destination" [ref=e657]
+          - generic [ref=e658]:
+            - text: business
+            - heading "Coimbatore One Way Taxi" [level=3] [ref=e659]
+            - generic [ref=e660]:
+              - link "Call" [ref=e661] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e662] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Coimbatore
+        - generic [ref=e663]:
+          - img "Madurai one way taxi destination" [ref=e664]
+          - generic [ref=e665]:
+            - text: temple
+            - heading "Madurai One Way Taxi" [level=3] [ref=e666]
+            - generic [ref=e667]:
+              - link "Call" [ref=e668] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e669] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Madurai
+        - generic [ref=e670]:
+          - img "Rameswaram one way taxi destination" [ref=e671]
+          - generic [ref=e672]:
+            - text: temple
+            - heading "Rameswaram One Way Taxi" [level=3] [ref=e673]
+            - generic [ref=e674]:
+              - link "Call" [ref=e675] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e676] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Rameswaram
+        - generic [ref=e677]:
+          - img "Tirupati one way taxi destination" [ref=e678]
+          - generic [ref=e679]:
+            - text: temple
+            - heading "Tirupati One Way Taxi" [level=3] [ref=e680]
+            - generic [ref=e681]:
+              - link "Call" [ref=e682] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e683] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Tirupati
+        - generic [ref=e684]:
+          - img "Ooty one way taxi destination" [ref=e685]
+          - generic [ref=e686]:
+            - text: hill
+            - heading "Ooty One Way Taxi" [level=3] [ref=e687]
+            - generic [ref=e688]:
+              - link "Call" [ref=e689] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e690] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Ooty
+        - generic [ref=e691]:
+          - img "Kodaikanal one way taxi destination" [ref=e692]
+          - generic [ref=e693]:
+            - text: hill
+            - heading "Kodaikanal One Way Taxi" [level=3] [ref=e694]
+            - generic [ref=e695]:
+              - link "Call" [ref=e696] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e697] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Kodaikanal
+        - generic [ref=e698]:
+          - img "Munnar one way taxi destination" [ref=e699]
+          - generic [ref=e700]:
+            - text: hill
+            - heading "Munnar One Way Taxi" [level=3] [ref=e701]
+            - generic [ref=e702]:
+              - link "Call" [ref=e703] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e704] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Munnar
+        - generic [ref=e705]:
+          - img "Pondicherry one way taxi destination" [ref=e706]
+          - generic [ref=e707]:
+            - text: coastal
+            - heading "Pondicherry One Way Taxi" [level=3] [ref=e708]
+            - generic [ref=e709]:
+              - link "Call" [ref=e710] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e711] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Pondicherry
+        - generic [ref=e712]:
+          - img "Kanyakumari one way taxi destination" [ref=e713]
+          - generic [ref=e714]:
+            - text: coastal
+            - heading "Kanyakumari One Way Taxi" [level=3] [ref=e715]
+            - generic [ref=e716]:
+              - link "Call" [ref=e717] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e718] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Kanyakumari
+        - generic [ref=e719]:
+          - img "Alleppey one way taxi destination" [ref=e720]
+          - generic [ref=e721]:
+            - text: coastal
+            - heading "Alleppey One Way Taxi" [level=3] [ref=e722]
+            - generic [ref=e723]:
+              - link "Call" [ref=e724] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e725] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Alleppey
+        - generic [ref=e726]:
+          - img "Cochin one way taxi destination" [ref=e727]
+          - generic [ref=e728]:
+            - text: city
+            - heading "Cochin One Way Taxi" [level=3] [ref=e729]
+            - generic [ref=e730]:
+              - link "Call" [ref=e731] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e732] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Cochin
+        - generic [ref=e733]:
+          - img "Mysore one way taxi destination" [ref=e734]
+          - generic [ref=e735]:
+            - text: city
+            - heading "Mysore One Way Taxi" [level=3] [ref=e736]
+            - generic [ref=e737]:
+              - link "Call" [ref=e738] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e739] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Mysore
+        - generic [ref=e740]:
+          - img "Trichy one way taxi destination" [ref=e741]
+          - generic [ref=e742]:
+            - text: city
+            - heading "Trichy One Way Taxi" [level=3] [ref=e743]
+            - generic [ref=e744]:
+              - link "Call" [ref=e745] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e746] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Trichy
+        - generic [ref=e747]:
+          - img "Thanjavur one way taxi destination" [ref=e748]
+          - generic [ref=e749]:
+            - text: temple
+            - heading "Thanjavur One Way Taxi" [level=3] [ref=e750]
+            - generic [ref=e751]:
+              - link "Call" [ref=e752] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e753] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Thanjavur
+        - generic [ref=e754]:
+          - img "Salem one way taxi destination" [ref=e755]
+          - generic [ref=e756]:
+            - text: city
+            - heading "Salem One Way Taxi" [level=3] [ref=e757]
+            - generic [ref=e758]:
+              - link "Call" [ref=e759] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e760] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Salem
+        - generic [ref=e761]:
+          - img "Tirunelveli one way taxi destination" [ref=e762]
+          - generic [ref=e763]:
+            - text: city
+            - heading "Tirunelveli One Way Taxi" [level=3] [ref=e764]
+            - generic [ref=e765]:
+              - link "Call" [ref=e766] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e767] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Tirunelveli
+        - generic [ref=e768]:
+          - img "Kutralam one way taxi destination" [ref=e769]
+          - generic [ref=e770]:
+            - text: scenic
+            - heading "Kutralam One Way Taxi" [level=3] [ref=e771]
+            - generic [ref=e772]:
+              - link "Call" [ref=e773] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e774] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Kutralam
+        - generic [ref=e775]:
+          - img "Velankanni one way taxi destination" [ref=e776]
+          - generic [ref=e777]:
+            - text: temple
+            - heading "Velankanni One Way Taxi" [level=3] [ref=e778]
+            - generic [ref=e779]:
+              - link "Call" [ref=e780] [cursor=pointer]:
+                - /url: tel:+918122196198
+              - link "Get Fare" [ref=e781] [cursor=pointer]:
+                - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20to%20Velankanni
+    - generic [ref=e783]:
+      - heading "Most Booked One Way Taxi Routes in South India" [level=2] [ref=e785]
+      - generic [ref=e786]:
+        - generic [ref=e787]:
+          - heading "Most Booked City-to-City Taxi Routes" [level=3] [ref=e788]
+          - list [ref=e789]:
+            - listitem [ref=e790]:
+              - paragraph [ref=e791]: Chennai → Coimbatore
+              - paragraph [ref=e792]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e793]:
+                - link "Call" [ref=e794] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e795] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Chennai%20%E2%86%92%20Coimbatore
+            - listitem [ref=e796]:
+              - paragraph [ref=e797]: Chennai → Madurai
+              - paragraph [ref=e798]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e799]:
+                - link "Call" [ref=e800] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e801] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Chennai%20%E2%86%92%20Madurai
+            - listitem [ref=e802]:
+              - paragraph [ref=e803]: Chennai → Trichy
+              - paragraph [ref=e804]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e805]:
+                - link "Call" [ref=e806] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e807] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Chennai%20%E2%86%92%20Trichy
+            - listitem [ref=e808]:
+              - paragraph [ref=e809]: Chennai → Salem
+              - paragraph [ref=e810]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e811]:
+                - link "Call" [ref=e812] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e813] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Chennai%20%E2%86%92%20Salem
+        - generic [ref=e814]:
+          - heading "Popular Routes to Bangalore" [level=3] [ref=e815]
+          - list [ref=e816]:
+            - listitem [ref=e817]:
+              - paragraph [ref=e818]: Chennai → Bangalore
+              - paragraph [ref=e819]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e820]:
+                - link "Call" [ref=e821] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e822] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Chennai%20%E2%86%92%20Bangalore
+            - listitem [ref=e823]:
+              - paragraph [ref=e824]: Coimbatore → Bangalore
+              - paragraph [ref=e825]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e826]:
+                - link "Call" [ref=e827] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e828] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Coimbatore%20%E2%86%92%20Bangalore
+            - listitem [ref=e829]:
+              - paragraph [ref=e830]: Salem → Bangalore
+              - paragraph [ref=e831]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e832]:
+                - link "Call" [ref=e833] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e834] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Salem%20%E2%86%92%20Bangalore
+            - listitem [ref=e835]:
+              - paragraph [ref=e836]: Vellore → Bangalore
+              - paragraph [ref=e837]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e838]:
+                - link "Call" [ref=e839] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e840] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Vellore%20%E2%86%92%20Bangalore
+        - generic [ref=e841]:
+          - heading "Kerala One Way Taxi Routes from Tamil Nadu" [level=3] [ref=e842]
+          - list [ref=e843]:
+            - listitem [ref=e844]:
+              - paragraph [ref=e845]: Coimbatore → Kochi
+              - paragraph [ref=e846]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e847]:
+                - link "Call" [ref=e848] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e849] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Coimbatore%20%E2%86%92%20Kochi
+            - listitem [ref=e850]:
+              - paragraph [ref=e851]: Coimbatore → Palakkad
+              - paragraph [ref=e852]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e853]:
+                - link "Call" [ref=e854] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e855] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Coimbatore%20%E2%86%92%20Palakkad
+            - listitem [ref=e856]:
+              - paragraph [ref=e857]: Coimbatore → Thrissur
+              - paragraph [ref=e858]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e859]:
+                - link "Call" [ref=e860] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e861] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Coimbatore%20%E2%86%92%20Thrissur
+            - listitem [ref=e862]:
+              - paragraph [ref=e863]: Chennai → Trivandrum
+              - paragraph [ref=e864]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e865]:
+                - link "Call" [ref=e866] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e867] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Chennai%20%E2%86%92%20Trivandrum
+        - generic [ref=e868]:
+          - heading "Temple & Pilgrimage Taxi Routes" [level=3] [ref=e869]
+          - list [ref=e870]:
+            - listitem [ref=e871]:
+              - paragraph [ref=e872]: Madurai → Rameswaram
+              - paragraph [ref=e873]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e874]:
+                - link "Call" [ref=e875] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e876] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Madurai%20%E2%86%92%20Rameswaram
+            - listitem [ref=e877]:
+              - paragraph [ref=e878]: Chennai → Kanchipuram
+              - paragraph [ref=e879]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e880]:
+                - link "Call" [ref=e881] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e882] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Chennai%20%E2%86%92%20Kanchipuram
+            - listitem [ref=e883]:
+              - paragraph [ref=e884]: Trichy → Thanjavur
+              - paragraph [ref=e885]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e886]:
+                - link "Call" [ref=e887] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e888] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Trichy%20%E2%86%92%20Thanjavur
+            - listitem [ref=e889]:
+              - paragraph [ref=e890]: Thanjavur → Kumbakonam
+              - paragraph [ref=e891]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e892]:
+                - link "Call" [ref=e893] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e894] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Thanjavur%20%E2%86%92%20Kumbakonam
+        - generic [ref=e895]:
+          - heading "Hill Station Taxi Routes for Weekend Trips" [level=3] [ref=e896]
+          - list [ref=e897]:
+            - listitem [ref=e898]:
+              - paragraph [ref=e899]: Coimbatore → Ooty
+              - paragraph [ref=e900]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e901]:
+                - link "Call" [ref=e902] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e903] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Coimbatore%20%E2%86%92%20Ooty
+            - listitem [ref=e904]:
+              - paragraph [ref=e905]: Madurai → Kodaikanal
+              - paragraph [ref=e906]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e907]:
+                - link "Call" [ref=e908] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e909] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Madurai%20%E2%86%92%20Kodaikanal
+            - listitem [ref=e910]:
+              - paragraph [ref=e911]: Salem → Yercaud
+              - paragraph [ref=e912]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e913]:
+                - link "Call" [ref=e914] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e915] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Salem%20%E2%86%92%20Yercaud
+            - listitem [ref=e916]:
+              - paragraph [ref=e917]: Chennai → Yelagiri
+              - paragraph [ref=e918]: One Way • Fixed Fare • No Return Charge
+              - generic [ref=e919]:
+                - link "Call" [ref=e920] [cursor=pointer]:
+                  - /url: tel:+918122196198
+                - link "Get Fare" [ref=e921] [cursor=pointer]:
+                  - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20for%20Chennai%20%E2%86%92%20Yelagiri
+    - generic [ref=e923]:
+      - generic [ref=e924]:
+        - paragraph [ref=e925]: Nonstop Drop Taxi Process
+        - heading "Book Your One Way Taxi in 4 Simple Steps" [level=2] [ref=e926]
+      - generic [ref=e927]:
+        - generic [ref=e928]:
+          - text: "01"
+          - heading "Enter Route" [level=3] [ref=e929]
+          - paragraph [ref=e930]: Pickup and drop city
+        - generic [ref=e931]:
+          - text: "02"
+          - heading "Confirm Fare" [level=3] [ref=e932]
+          - paragraph [ref=e933]: Fixed price, no hidden charges
+        - generic [ref=e934]:
+          - text: "03"
+          - heading "Choose Time" [level=3] [ref=e935]
+          - paragraph [ref=e936]: Flexible pickup scheduling
+        - generic [ref=e937]:
+          - text: "04"
+          - heading "Driver Assigned" [level=3] [ref=e938]
+          - paragraph [ref=e939]: Verified driver for your trip
+    - generic [ref=e941]:
+      - generic [ref=e942]:
+        - paragraph [ref=e943]: Trusted by One Way Taxi Customers
+        - heading "Real feedback from travelers" [level=2] [ref=e944]
+        - paragraph [ref=e945]: Real feedback from travelers using Nonstop Drop Taxi across Tamil Nadu, Kerala and Karnataka.
+      - generic [ref=e946]:
+        - generic [ref=e947]:
+          - paragraph [ref=e948]: 4.8 / 5
+          - paragraph [ref=e949]: Average Rating
+        - generic [ref=e950]:
+          - paragraph [ref=e951]: 10,000+
+          - paragraph [ref=e952]: Trips Served
+        - generic [ref=e953]:
+          - paragraph [ref=e954]: 24×7
+          - paragraph [ref=e955]: Support
+      - generic [ref=e956]:
+        - blockquote [ref=e957]:
+          - paragraph [ref=e958]: “On-time pickup and exact fare as quoted. Smooth long-distance ride.”
+          - generic [ref=e959]:
+            - paragraph [ref=e960]: Karthik R
+            - paragraph [ref=e961]: Chennai → Coimbatore
+        - blockquote [ref=e962]:
+          - paragraph [ref=e963]: “Driver handled hill roads well. Comfortable journey overall.”
+          - generic [ref=e964]:
+            - paragraph [ref=e965]: Divya S
+            - paragraph [ref=e966]: Madurai → Kodaikanal
+        - blockquote [ref=e967]:
+          - paragraph [ref=e968]: “Booked via WhatsApp, got quick confirmation and clean vehicle.”
+          - generic [ref=e969]:
+            - paragraph [ref=e970]: Sanjay V
+            - paragraph [ref=e971]: Bangalore → Salem
+        - blockquote [ref=e972]:
+          - paragraph [ref=e973]: “Family trip was smooth. Good space for luggage.”
+          - generic [ref=e974]:
+            - paragraph [ref=e975]: Lakshmi P
+            - paragraph [ref=e976]: Trichy → Rameswaram
+        - blockquote [ref=e977]:
+          - paragraph [ref=e978]: “Reliable service for intercity travel. No hidden charges.”
+          - generic [ref=e979]:
+            - paragraph [ref=e980]: Arvind K
+            - paragraph [ref=e981]: Coimbatore → Kochi
+    - generic [ref=e983]:
+      - heading "Frequently Asked Questions" [level=2] [ref=e984]
+      - generic [ref=e985]:
+        - generic [ref=e986]:
+          - button "What is one way drop taxi?" [expanded] [ref=e987]:
+            - text: What is one way drop taxi?
+            - img [ref=e988]
+          - generic [ref=e990]: One way drop taxi means you pay only for the forward journey from pickup to drop location. No return fare is charged, making it ideal for city-to-city travel.
+        - button "What is the minimum distance for one way taxi?" [ref=e992]:
+          - text: What is the minimum distance for one way taxi?
+          - img [ref=e993]
+        - button "What is driver bata?" [ref=e996]:
+          - text: What is driver bata?
+          - img [ref=e997]
+        - button "Are toll charges included in the fare?" [ref=e1000]:
+          - text: Are toll charges included in the fare?
+          - img [ref=e1001]
+        - button "How do I book a taxi?" [ref=e1004]:
+          - text: How do I book a taxi?
+          - img [ref=e1005]
+        - button "Which areas do you serve?" [ref=e1008]:
+          - text: Which areas do you serve?
+          - img [ref=e1009]
+    - generic [ref=e1012]:
+      - heading "Book One Way Taxi with Nonstop Drop Taxi" [level=2] [ref=e1013]
+      - paragraph [ref=e1014]: Contact us for one way and outstation taxi booking with transparent pricing, verified drivers and 24×7 support across South India.
+      - generic [ref=e1015]:
+        - link "Call Now" [ref=e1016] [cursor=pointer]:
+          - /url: tel:+918122196198
+          - img [ref=e1017]
+          - text: Call Now
+        - link "Get Fare on WhatsApp" [ref=e1019] [cursor=pointer]:
+          - /url: https://wa.me/918122196198?text=Hi%20Nonstop%20Drop%20Taxi%2C%0AI%20need%20fare%20details%20for%20one%20way%20taxi.%0APickup%3A%20%5BYour%20Location%5D%0ADrop%3A%20%5BDestination%5D%0ADate%3A%20%5BTravel%20Date%5D%0AVehicle%3A%20Sedan%0ATrip%20Type%3A%20One%20Way%0APlease%20share%20price%20and%20availability.
+          - img [ref=e1020]
+          - text: Get Fare on WhatsApp
+      - paragraph [ref=e1022]: Transparent pricing • No return charge • 24×7 support
+  - contentinfo [ref=e1023]:
+    - generic [ref=e1024]:
+      - generic [ref=e1025]:
+        - img "Nonstop Drop Taxi Logo" [ref=e1026]
+        - paragraph [ref=e1027]: Nonstop Drop Taxi offers reliable one way and outstation taxi services across Tamil Nadu, Kerala and Karnataka with transparent pricing and 24/7 support.
+      - generic [ref=e1028]:
+        - heading "Quick Links" [level=3] [ref=e1029]
+        - list [ref=e1030]:
+          - listitem [ref=e1031]:
+            - link "Home" [ref=e1032] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e1033]:
+            - link "Taxi Fare & Pricing" [ref=e1034] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e1035]:
+            - link "Available Cars" [ref=e1036] [cursor=pointer]:
+              - /url: /fleet
+          - listitem [ref=e1037]:
+            - link "One Way Taxi Service" [ref=e1038] [cursor=pointer]:
+              - /url: /one-way-taxi
+          - listitem [ref=e1039]:
+            - link "Travel Guides & Route Tips" [ref=e1040] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e1041]:
+            - link "Contact & Booking" [ref=e1042] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e1043]:
+        - heading "Popular Routes" [level=3] [ref=e1044]
+        - list [ref=e1045]:
+          - listitem [ref=e1046]:
+            - link "Chennai to Madurai Taxi" [ref=e1047] [cursor=pointer]:
+              - /url: /chennai-to-madurai-taxi
+          - listitem [ref=e1048]:
+            - link "Chennai to Coimbatore Taxi" [ref=e1049] [cursor=pointer]:
+              - /url: /chennai-to-coimbatore-taxi
+          - listitem [ref=e1050]:
+            - link "Chennai to Salem Taxi" [ref=e1051] [cursor=pointer]:
+              - /url: /chennai-to-salem-taxi
+          - listitem [ref=e1052]:
+            - link "Chennai to Trichy Taxi" [ref=e1053] [cursor=pointer]:
+              - /url: /chennai-to-trichy-taxi
+          - listitem [ref=e1054]:
+            - link "Chennai to Bangalore Taxi" [ref=e1055] [cursor=pointer]:
+              - /url: /chennai-to-bangalore-taxi
+          - listitem [ref=e1056]:
+            - link "Chennai to Pondicherry Taxi" [ref=e1057] [cursor=pointer]:
+              - /url: /chennai-to-pondicherry-taxi
+          - listitem [ref=e1058]:
+            - link "Chennai to Vellore Taxi" [ref=e1059] [cursor=pointer]:
+              - /url: /chennai-to-vellore-taxi
+          - listitem [ref=e1060]:
+            - link "Chennai to Tirupati Taxi" [ref=e1061] [cursor=pointer]:
+              - /url: /chennai-to-tirupati-taxi
+      - generic [ref=e1062]:
+        - heading "Cities" [level=3] [ref=e1063]
+        - list [ref=e1064]:
+          - listitem [ref=e1065]:
+            - link "Chennai" [ref=e1066] [cursor=pointer]:
+              - /url: /city/chennai
+          - listitem [ref=e1067]:
+            - link "Coimbatore" [ref=e1068] [cursor=pointer]:
+              - /url: /city/coimbatore
+          - listitem [ref=e1069]:
+            - link "Madurai" [ref=e1070] [cursor=pointer]:
+              - /url: /city/madurai
+          - listitem [ref=e1071]:
+            - link "Salem" [ref=e1072] [cursor=pointer]:
+              - /url: /city/salem
+          - listitem [ref=e1073]:
+            - link "Tiruchirappalli" [ref=e1074] [cursor=pointer]:
+              - /url: /city/tiruchirappalli
+          - listitem [ref=e1075]:
+            - link "Tirunelveli" [ref=e1076] [cursor=pointer]:
+              - /url: /city/tirunelveli
+    - generic [ref=e1077]:
+      - generic [ref=e1078]:
+        - generic [ref=e1079]:
+          - link "+91 81221 96198" [ref=e1080] [cursor=pointer]:
+            - /url: tel:+918122196198
+            - img [ref=e1081]
+            - text: +91 81221 96198
+          - link "nonstopdroptaxi2026@gmail.com" [ref=e1083] [cursor=pointer]:
+            - /url: mailto:nonstopdroptaxi2026@gmail.com
+          - link "WhatsApp" [ref=e1084] [cursor=pointer]:
+            - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20taxi%20booking
+            - img [ref=e1085]
+            - text: WhatsApp
+        - generic [ref=e1087]:
+          - link "Privacy Policy" [ref=e1088] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms & Conditions" [ref=e1089] [cursor=pointer]:
+            - /url: /terms-of-service
+          - link "FAQ" [ref=e1090] [cursor=pointer]:
+            - /url: /faq
+          - link "GK Web Designs" [ref=e1091] [cursor=pointer]:
+            - /url: /gk-web-designs
+      - paragraph [ref=e1092]: © 2026 Nonstop Drop Taxi. All rights reserved.
+  - link "Call +91 81221 96198" [ref=e1093] [cursor=pointer]:
+    - /url: tel:+918122196198
+    - img [ref=e1094]
+  - link "Get fare on WhatsApp" [ref=e1096] [cursor=pointer]:
+    - /url: https://wa.me/918122196198?text=Hi%20Nonstop%20Drop%20Taxi%2C%0AI%20need%20fare%20details%20for%20one%20way%20taxi.%0APickup%3A%20%5BYour%20Location%5D%0ADrop%3A%20%5BDestination%5D%0ADate%3A%20%5BTravel%20Date%5D%0AVehicle%3A%20Sedan%0ATrip%20Type%3A%20One%20Way%0APlease%20share%20price%20and%20availability.
+    - img [ref=e1097]

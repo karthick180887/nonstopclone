@@ -1,0 +1,17 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ST
+      - heading "Welcome back" [level=1] [ref=e7]
+      - paragraph [ref=e8]: Sign in to your admin dashboard
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Email or Phone
+        - textbox "Enter email or phone" [ref=e14]
+      - generic [ref=e15]:
+        - generic [ref=e16]: Password
+        - textbox "Enter password" [ref=e19]
+      - generic [ref=e20]:
+        - button "Sign in" [ref=e21] [cursor=pointer]
+        - button "Cancel" [ref=e22] [cursor=pointer]

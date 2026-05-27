@@ -1,0 +1,231 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e7]:
+      - link "Facebook" [ref=e8] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e9]
+      - link "Instagram" [ref=e11] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e12]
+      - link "X" [ref=e15] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e16]
+      - link "WhatsApp" [ref=e18] [cursor=pointer]:
+        - /url: https://wa.me/918122196198?text=Hi%20NonstopDropTaxi%2C%20I%20need%20a%20taxi%20booking
+        - img [ref=e19]
+      - link "+91 81221 96198" [ref=e21] [cursor=pointer]:
+        - /url: tel:+918122196198
+    - generic [ref=e24]:
+      - generic "Nonstop Drop Taxi Home" [ref=e25] [cursor=pointer]:
+        - img "Nonstop Drop Taxi Logo" [ref=e26]
+        - generic [ref=e27]:
+          - heading "Nonstop Drop Taxi" [level=1] [ref=e28]
+          - paragraph [ref=e29]: One Way Taxi • Fixed Fare • 24/7 Booking
+      - navigation [ref=e30]:
+        - link "Home" [ref=e31] [cursor=pointer]:
+          - /url: /
+        - link "Company" [ref=e32] [cursor=pointer]:
+          - /url: /about
+        - link "Services" [ref=e33] [cursor=pointer]:
+          - /url: /services
+        - link "Fleet" [ref=e34] [cursor=pointer]:
+          - /url: /fleet
+        - link "Pricing" [ref=e35] [cursor=pointer]:
+          - /url: /pricing
+        - link "Contact" [ref=e36] [cursor=pointer]:
+          - /url: /contact
+      - link "Call Nonstop Drop Taxi" [ref=e38] [cursor=pointer]:
+        - /url: tel:+918122196198
+        - img [ref=e39]
+        - text: Book Now
+  - generic [ref=e45]:
+    - generic [ref=e46]:
+      - generic [ref=e47]: 🚖 Nonstop Drop Taxi • One Way & Outstation Service
+      - generic [ref=e48]: ✔ Fixed Fare
+      - generic [ref=e49]: ✔ No Hidden Charges
+      - generic [ref=e50]: ✔ 24/7 Booking Support
+      - link "Call Nonstop Drop Taxi" [ref=e51] [cursor=pointer]:
+        - /url: tel:+918122196198
+        - text: 📞 +91 81221 96198
+    - generic [ref=e52]:
+      - generic [ref=e53]: 🚖 Nonstop Drop Taxi • One Way & Outstation Service
+      - generic [ref=e54]: ✔ Fixed Fare
+      - generic [ref=e55]: ✔ No Hidden Charges
+      - generic [ref=e56]: ✔ 24/7 Booking Support
+      - link "Call Nonstop Drop Taxi" [ref=e57] [cursor=pointer]:
+        - /url: tel:+918122196198
+        - text: 📞 +91 81221 96198
+  - main [ref=e58]:
+    - generic [ref=e60]:
+      - heading "About Nonstop Drop Taxi" [level=1] [ref=e61]
+      - paragraph [ref=e62]: Nonstop Drop Taxi is built to make intercity travel simple, reliable and transparent. We provide one way and outstation taxi services across Tamil Nadu, Kerala and Karnataka with professional drivers and clear pricing.
+    - generic [ref=e64]:
+      - heading "Why Choose Nonstop Drop Taxi" [level=2] [ref=e65]
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - img [ref=e68]
+          - heading "Verified Drivers" [level=3] [ref=e71]
+          - paragraph [ref=e72]: Experienced drivers trained for long distance and intercity travel.
+        - generic [ref=e73]:
+          - img [ref=e74]
+          - heading "Clean Vehicles" [level=3] [ref=e78]
+          - paragraph [ref=e79]: Well-maintained cars suitable for family, business and solo trips.
+        - generic [ref=e80]:
+          - img [ref=e81]
+          - heading "On-Time Pickup" [level=3] [ref=e84]
+          - paragraph [ref=e85]: Punctual service for airport, city and outstation travel.
+        - generic [ref=e86]:
+          - img [ref=e87]
+          - heading "Wide Coverage" [level=3] [ref=e90]
+          - paragraph [ref=e91]: Service across Tamil Nadu, Kerala and Karnataka routes.
+    - generic [ref=e93]:
+      - heading "One Way & Outstation Taxi Services" [level=2] [ref=e94]
+      - paragraph [ref=e95]: We offer one way drop taxi, round trip and long distance travel solutions connecting major cities, airport routes, business hubs and tourist destinations. Pricing is based on distance with clear billing and no hidden charges.
+    - generic [ref=e97]:
+      - heading "Book Your Taxi with Confidence" [level=2] [ref=e98]
+      - paragraph [ref=e99]: Get instant fare details and confirm your booking through call or WhatsApp.
+      - generic [ref=e100]:
+        - link "Call Now" [ref=e101] [cursor=pointer]:
+          - /url: tel:+918122196198
+        - link "Get Fare on WhatsApp" [ref=e102] [cursor=pointer]:
+          - /url: https://wa.me/918122196198?text=Hi%2C%20I%20need%20one%20way%20taxi%20details
+  - contentinfo [ref=e103]:
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - heading "Book One Way Taxi Instantly" [level=2] [ref=e109]
+        - paragraph [ref=e110]: Fixed fare • No return charge • 24×7 support
+      - generic [ref=e111]:
+        - link "Call Now" [ref=e112] [cursor=pointer]:
+          - /url: tel:+918122196198
+        - link "WhatsApp" [ref=e113] [cursor=pointer]:
+          - /url: https://wa.me/918122196198?text=Hi, I need taxi booking
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - heading "Nonstop Drop Taxi" [level=3] [ref=e116]
+        - paragraph [ref=e117]: Reliable one way taxi and outstation cab services across Tamil Nadu, Kerala and Karnataka.
+        - generic [ref=e118]:
+          - link "Nonstop Drop Taxi Facebook" [ref=e119] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e120]
+          - link "Chat on WhatsApp" [ref=e122] [cursor=pointer]:
+            - /url: https://wa.me/918122196198?text=Hi, I need taxi booking
+            - img [ref=e123]
+          - link "Nonstop Drop Taxi Instagram" [ref=e125] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e126]
+          - link "Nonstop Drop Taxi on X" [ref=e128] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e129]
+      - generic [ref=e131]:
+        - heading "Explore Services" [level=4] [ref=e132]
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - link "Home" [ref=e135] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e136]:
+            - link "Taxi Fare & Pricing" [ref=e137] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e138]:
+            - link "Available Cars" [ref=e139] [cursor=pointer]:
+              - /url: /fleet
+          - listitem [ref=e140]:
+            - link "One Way Taxi Service" [ref=e141] [cursor=pointer]:
+              - /url: /one-way-taxi
+          - listitem [ref=e142]:
+            - link "Travel Guides & Route Tips" [ref=e143] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e144]:
+            - link "Contact & Booking" [ref=e145] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e146]:
+        - heading "Popular Routes" [level=4] [ref=e147]
+        - list [ref=e148]:
+          - listitem [ref=e149]:
+            - link "Chennai to Madurai Taxi" [ref=e150] [cursor=pointer]:
+              - /url: /chennai-to-madurai-taxi
+          - listitem [ref=e151]:
+            - link "Chennai to Coimbatore Taxi" [ref=e152] [cursor=pointer]:
+              - /url: /chennai-to-coimbatore-taxi
+          - listitem [ref=e153]:
+            - link "Chennai to Bangalore Taxi" [ref=e154] [cursor=pointer]:
+              - /url: /chennai-to-bangalore-taxi
+          - listitem [ref=e155]:
+            - link "Coimbatore to Cochin Taxi" [ref=e156] [cursor=pointer]:
+              - /url: /coimbatore-to-cochin-taxi
+          - listitem [ref=e157]:
+            - link "Madurai to Rameswaram Taxi" [ref=e158] [cursor=pointer]:
+              - /url: /madurai-to-rameswaram-taxi
+          - listitem [ref=e159]:
+            - link "Trichy to Thanjavur Taxi" [ref=e160] [cursor=pointer]:
+              - /url: /trichy-to-thanjavur-taxi
+          - listitem [ref=e161]:
+            - link "Salem to Bangalore Taxi" [ref=e162] [cursor=pointer]:
+              - /url: /salem-to-bangalore-taxi
+          - listitem [ref=e163]:
+            - link "Chennai to Pondicherry Taxi" [ref=e164] [cursor=pointer]:
+              - /url: /chennai-to-pondicherry-taxi
+      - generic [ref=e165]:
+        - heading "Cities We Serve" [level=4] [ref=e166]
+        - generic [ref=e167]:
+          - link "chennai" [ref=e168] [cursor=pointer]:
+            - /url: /city/chennai
+          - link "coimbatore" [ref=e169] [cursor=pointer]:
+            - /url: /city/coimbatore
+          - link "madurai" [ref=e170] [cursor=pointer]:
+            - /url: /city/madurai
+          - link "salem" [ref=e171] [cursor=pointer]:
+            - /url: /city/salem
+          - link "tiruchirappalli" [ref=e172] [cursor=pointer]:
+            - /url: /city/tiruchirappalli
+          - link "tirunelveli" [ref=e173] [cursor=pointer]:
+            - /url: /city/tirunelveli
+          - link "bengaluru" [ref=e174] [cursor=pointer]:
+            - /url: /city/bengaluru
+          - link "nilgiris" [ref=e175] [cursor=pointer]:
+            - /url: /city/nilgiris
+          - link "kodaikanal" [ref=e176] [cursor=pointer]:
+            - /url: /city/kodaikanal
+          - link "erode" [ref=e177] [cursor=pointer]:
+            - /url: /city/erode
+          - link "vellore" [ref=e178] [cursor=pointer]:
+            - /url: /city/vellore
+      - generic [ref=e179]:
+        - heading "Contact" [level=4] [ref=e180]
+        - generic [ref=e181]:
+          - link "+91 81221 96198" [ref=e182] [cursor=pointer]:
+            - /url: tel:+918122196198
+            - img [ref=e183]
+            - text: +91 81221 96198
+          - link "nonstopdroptaxi2026@gmail.com" [ref=e185] [cursor=pointer]:
+            - /url: mailto:nonstopdroptaxi2026@gmail.com
+            - img [ref=e186]
+            - text: nonstopdroptaxi2026@gmail.com
+          - generic [ref=e189]:
+            - img [ref=e190]
+            - text: South India Coverage
+        - link "Get Fare on WhatsApp" [ref=e193] [cursor=pointer]:
+          - /url: https://wa.me/918122196198?text=Hi, I need taxi booking
+    - generic [ref=e194]:
+      - paragraph [ref=e195]: © 2026 Nonstop Drop Taxi. All rights reserved.
+      - generic [ref=e196]:
+        - link "Privacy Policy" [ref=e197] [cursor=pointer]:
+          - /url: /privacy-policy
+        - link "Terms & Conditions" [ref=e198] [cursor=pointer]:
+          - /url: /terms-of-service
+        - link "FAQ" [ref=e199] [cursor=pointer]:
+          - /url: /faq
+      - paragraph [ref=e200]:
+        - text: Designed by
+        - link "GK Web Designs" [ref=e201] [cursor=pointer]:
+          - /url: /gk-web-designs
+  - generic [ref=e202]:
+    - button "Back to Top" [ref=e204] [cursor=pointer]:
+      - img [ref=e205]
+    - link "Call +91 81221 96198" [ref=e207] [cursor=pointer]:
+      - /url: tel:+918122196198
+      - img [ref=e208]
+      - generic [ref=e210]: Call +91 81221 96198
+    - link "Get Fare on WhatsApp" [ref=e211] [cursor=pointer]:
+      - /url: https://wa.me/918122196198?text=Hi,%20I%20need%20one%20way%20taxi%20fare%20details%20for%20outstation%20travel.%20Please%20share%20price%20and%20availability.
+      - img [ref=e212]
+      - generic [ref=e214]: Get Fare on WhatsApp

@@ -1,0 +1,162 @@
+[
+  {
+    "url": "https://www.nonstopdroptaxi.com/nonstop-logo.avif",
+    "dest": "public\\source-assets\\logos\\nonstop-logo.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/images/nonstop-hero.avif",
+    "dest": "public\\source-assets\\images\\nonstop-hero.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/images/nonstop-highway.avif",
+    "dest": "public\\source-assets\\images\\nonstop-highway.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/swift-dzire-cab.avif",
+    "dest": "public\\source-assets\\images\\swift-dzire-cab.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/etios-sedan-cab.avif",
+    "dest": "public\\source-assets\\images\\etios-sedan-cab.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/ertiga-mpv-taxi.avif",
+    "dest": "public\\source-assets\\images\\ertiga-mpv-taxi.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/innova-mpv-taxi.avif",
+    "dest": "public\\source-assets\\images\\innova-mpv-taxi.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/innova-crysta-cab-service.avif",
+    "dest": "public\\source-assets\\images\\innova-crysta-cab-service.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/chennai-tourist-beach-view.avif",
+    "dest": "public\\source-assets\\images\\chennai-tourist-beach-view.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/bangalore-palace-tour.avif",
+    "dest": "public\\source-assets\\images\\bangalore-palace-tour.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/coimbatore-waterfalls-nature.avif",
+    "dest": "public\\source-assets\\images\\coimbatore-waterfalls-nature.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/madurai-meenakshitemple-view.avif",
+    "dest": "public\\source-assets\\images\\madurai-meenakshitemple-view.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/rameshwaram-temple-pamban-bridge.avif",
+    "dest": "public\\source-assets\\images\\rameshwaram-temple-pamban-bridge.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/tirupati-balaji-temple-view.avif",
+    "dest": "public\\source-assets\\images\\tirupati-balaji-temple-view.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/ooty-lake-hills-view.avif",
+    "dest": "public\\source-assets\\images\\ooty-lake-hills-view.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/kodaikanal-lake-mountain-view.avif",
+    "dest": "public\\source-assets\\images\\kodaikanal-lake-mountain-view.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/munnar-tea-estate-hills.avif",
+    "dest": "public\\source-assets\\images\\munnar-tea-estate-hills.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/pondicherry-beach-promenade.avif",
+    "dest": "public\\source-assets\\images\\pondicherry-beach-promenade.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/kanyakumari-vivekananda-rock.avif",
+    "dest": "public\\source-assets\\images\\kanyakumari-vivekananda-rock.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/alleppey-backwater-houseboat.avif",
+    "dest": "public\\source-assets\\images\\alleppey-backwater-houseboat.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/cochin-chinese-fishing-view.avif",
+    "dest": "public\\source-assets\\images\\cochin-chinese-fishing-view.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/mysore-palace-tour.avif",
+    "dest": "public\\source-assets\\images\\mysore-palace-tour.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/trichy-rockfort-temple-view.avif",
+    "dest": "public\\source-assets\\images\\trichy-rockfort-temple-view.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/thanjavur-brihadeeswarar-temple.avif",
+    "dest": "public\\source-assets\\images\\thanjavur-brihadeeswarar-temple.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/salem-yercaud-hills-view.avif",
+    "dest": "public\\source-assets\\images\\salem-yercaud-hills-view.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/tirunelveli-tamirabarani-river.avif",
+    "dest": "public\\source-assets\\images\\tirunelveli-tamirabarani-river.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/kutralam-waterfalls-view.avif",
+    "dest": "public\\source-assets\\images\\kutralam-waterfalls-view.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/assets/velankanni-church-basilica.avif",
+    "dest": "public\\source-assets\\images\\velankanni-church-basilica.avif",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/favicon.ico",
+    "dest": "public\\source-assets\\icons\\favicon.ico",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/favicon-32x32.png",
+    "dest": "public\\source-assets\\icons\\favicon-32x32.png",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/favicon-16x16.png",
+    "dest": "public\\source-assets\\icons\\favicon-16x16.png",
+    "ok": true
+  },
+  {
+    "url": "https://www.nonstopdroptaxi.com/apple-touch-icon.png",
+    "dest": "public\\source-assets\\icons\\apple-touch-icon.png",
+    "ok": true
+  }
+]

@@ -1,0 +1,10 @@
+const fs = require("fs");
+const Lm = require("../lib/city-lm-data.json");
+const citiesTs = fs.readFileSync("../lib/cities-data.ts", "utf8");
+const slugs = [...citiesTs.matchAll(/slug: "([^"]+)"/g)].map((m) => m[1]);
+const lm = Object.keys(Lm);
+const missing = slugs.filter((s) => !Lm[s]);
+const extra = lm.filter((s) => !slugs.includes(s));
+console.log("cities", slugs.length, "lm", lm.length);
+console.log("in cities not lm", missing);
+console.log("in lm not cities", extra);

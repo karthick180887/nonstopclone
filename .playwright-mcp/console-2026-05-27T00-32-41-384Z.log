@@ -1,0 +1,3 @@
+[     688ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[     714ms] [LOG] [Socket] connected SsvtKEkJq1b5fAAAAAAAAAXQ @ http://localhost:3000/_next/static/chunks/23ce70c3f85d0dd1.js:0
+[     715ms] [WARNING] [Socket] no admin credentials in localStorage; will wait for login @ http://localhost:3000/_next/static/chunks/23ce70c3f85d0dd1.js:0
