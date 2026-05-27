@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { estimateTripFare, SITE, VEHICLES } from "@/lib/site-data";
 import { buildFareMessage, whatsAppUrl } from "@/lib/utils";
@@ -33,6 +33,15 @@ declare global {
         };
         TravelMode: { DRIVING: string };
         UnitSystem: { METRIC: number };
+        places?: {
+          Autocomplete: new (
+            inputField: HTMLInputElement,
+            options?: { fields?: string[]; componentRestrictions?: { country: string | string[] } }
+          ) => {
+            addListener: (eventName: "place_changed", handler: () => void) => void;
+            getPlace: () => { formatted_address?: string; name?: string };
+          };
+        };
       };
     };
   }
@@ -64,6 +73,8 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
   const [distanceText, setDistanceText] = useState<string>("");
   const [distanceError, setDistanceError] = useState<string>("");
   const [isCalculatingDistance, setIsCalculatingDistance] = useState(false);
+  const pickupRef = useRef<HTMLInputElement | null>(null);
+  const dropRef = useRef<HTMLInputElement | null>(null);
 
   const selectedVehicle = useMemo(
     () => VEHICLES.find((v) => v.name === form.vehicle) ?? VEHICLES.find((v) => v.id === "sedan") ?? VEHICLES[0],
@@ -140,7 +151,7 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
 
     const script = document.createElement("script");
     script.id = GOOGLE_MAPS_SCRIPT_ID;
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&libraries=places`;
     script.async = true;
     script.defer = true;
     script.onload = () => setMapsReady(true);
@@ -151,6 +162,31 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
     };
     document.body.appendChild(script);
   }, []);
+
+  useEffect(() => {
+    if (!mapsReady || !window.google?.maps?.places?.Autocomplete) return;
+    if (!pickupRef.current || !dropRef.current) return;
+
+    const pickupAutocomplete = new window.google.maps.places.Autocomplete(pickupRef.current, {
+      fields: ["formatted_address", "name"],
+      componentRestrictions: { country: "in" },
+    });
+    const dropAutocomplete = new window.google.maps.places.Autocomplete(dropRef.current, {
+      fields: ["formatted_address", "name"],
+      componentRestrictions: { country: "in" },
+    });
+
+    pickupAutocomplete.addListener("place_changed", () => {
+      const place = pickupAutocomplete.getPlace();
+      const value = place.formatted_address || place.name || pickupRef.current?.value || "";
+      if (value) update("pickup", value);
+    });
+    dropAutocomplete.addListener("place_changed", () => {
+      const place = dropAutocomplete.getPlace();
+      const value = place.formatted_address || place.name || dropRef.current?.value || "";
+      if (value) update("drop", value);
+    });
+  }, [mapsReady]);
 
   useEffect(() => {
     if (!mapsReady) return;
@@ -202,6 +238,7 @@ Estimated Fare: ${estimatedFare ? `₹${estimatedFare.toLocaleString("en-IN")}` 
         <label className="block">
           <span className="text-sm font-medium text-gray-700">Pickup Address</span>
           <input
+            ref={pickupRef}
             required
             type="text"
             value={form.pickup}
@@ -213,6 +250,7 @@ Estimated Fare: ${estimatedFare ? `₹${estimatedFare.toLocaleString("en-IN")}` 
         <label className="block">
           <span className="text-sm font-medium text-gray-700">Drop Address</span>
           <input
+            ref={dropRef}
             required
             type="text"
             value={form.drop}
