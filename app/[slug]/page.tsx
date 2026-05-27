@@ -91,13 +91,13 @@ export default async function RoutePage({ params }: Props) {
               </div>
               <div className="flex gap-3 mt-5 w-full md:w-auto">
                 <a
-                  href="tel:+918122196198"
+                  href={`tel:${SITE.phoneTel}`}
                   className="bg-gradient-to-r from-[#1FAE4B] to-[#FFC107] text-black px-6 py-3 rounded-xl font-bold shadow hover:scale-[1.03] transition text-center"
                 >
                   Call Now
                 </a>
                 <a
-                  href={`https://wa.me/918122196198?text=Hi%20I%20need%20taxi%20from%20${route.from}%20to%20${route.to}`}
+                  href={`https://wa.me/${SITE.phoneWa}?text=Hi%20I%20need%20taxi%20from%20${route.from}%20to%20${route.to}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#16A34A] text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2 justify-center"

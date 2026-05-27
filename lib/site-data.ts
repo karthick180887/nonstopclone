@@ -1,9 +1,9 @@
 export const SITE = {
   name: "Nonstop Drop Taxi",
   tagline: "One Way & Outstation Cab Service South India",
-  phone: "+91 81221 96198",
-  phoneTel: "+918122196198",
-  phoneWa: "918122196198",
+  phone: "+91 98809 82741",
+  phoneTel: "+919880982741",
+  phoneWa: "919880982741",
   email: "nonstopdroptaxi2026@gmail.com",
   url: "https://www.nonstopdroptaxi.com",
   description:
@@ -43,7 +43,7 @@ export const FOOTER_LEGAL = [
   { name: "Privacy Policy", path: "/privacy-policy" },
   { name: "Terms & Conditions", path: "/terms-of-service" },
   { name: "FAQ", path: "/faq" },
-  { name: "GK Web Designs", path: "/gk-web-designs" },
+  { name: "Karthick Selvam", path: "/gk-web-designs" },
 ] as const;
 
 export const VEHICLES = [

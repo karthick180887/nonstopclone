@@ -23,7 +23,7 @@ export const HOME_FAQS = [
   {
     question: "How do I book a taxi?",
     answer:
-      "You can book instantly by calling +91 81221 96198 or sending a WhatsApp message with your pickup, drop, date and vehicle preference.",
+      "You can book instantly by calling +91 98809 82741 or sending a WhatsApp message with your pickup, drop, date and vehicle preference.",
   },
   {
     question: "Which areas do you serve?",

@@ -170,7 +170,7 @@ export default function Footer() {
           <Link href="/faq" className="hover:text-white transition">FAQ</Link>
         </div>
         <p className="mt-3">
-          Designed by <Link href="/gk-web-designs" className="text-green-400 font-semibold">GK Web Designs</Link>
+          Designed by <Link href="/gk-web-designs" className="text-green-400 font-semibold">Karthick Selvam</Link>
         </p>
       </div>
     </footer>
