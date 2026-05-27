@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props) {
   const r = findRouteForDropSlug(a, parsed.toSlug);
   if (!r) return {};
   return buildMetadata({
-    title: `${a.city} to ${r.to} Taxi Fare | Nonstop Drop Taxi`,
+    title: `${a.city} to ${r.to} Taxi Fare | Nagma Tours and Travels`,
     description: `Book ${a.city} to ${r.to} one way taxi. ${r.distance} km, approx ${r.time}. Fixed per KM pricing with driver bata from ₹400 (Mini).`,
     path: `/city/${e}/${dropSlug}`,
   });

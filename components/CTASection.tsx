@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site-data";
 import { whatsAppUrl } from "@/lib/utils";
 
 export default function CTASection({
-  title = "Book One Way Taxi with Nonstop Drop Taxi",
+  title = "Book One Way Taxi with Nagma Tours and Travels",
   subtitle = "Contact us for one way and outstation taxi booking with transparent pricing, verified drivers and 24×7 support across South India.",
 }: {
   title?: string;

@@ -70,12 +70,12 @@ export default function Footer() {
 
       <div className="relative max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-5 gap-10">
         <div>
-          <h3 className="text-white text-xl font-bold mb-3">Nonstop Drop Taxi</h3>
+          <h3 className="text-white text-xl font-bold mb-3">Nagma Tours and Travels</h3>
           <p className="text-sm text-gray-400 mb-4">
             Reliable one way taxi and outstation cab services across Tamil Nadu, Kerala and Karnataka.
           </p>
           <div className="flex gap-3 mt-4">
-            <a href="#" aria-label="Nonstop Drop Taxi Facebook" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
+            <a href="#" aria-label="Nagma Tours and Travels Facebook" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
               <Facebook size={16} />
             </a>
             <a
@@ -87,10 +87,10 @@ export default function Footer() {
             >
               <WhatsAppIcon size={16} className="text-white" />
             </a>
-            <a href="#" aria-label="Nonstop Drop Taxi Instagram" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
+            <a href="#" aria-label="Nagma Tours and Travels Instagram" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
               <Instagram size={16} />
             </a>
-            <a href="#" aria-label="Nonstop Drop Taxi on X" className="bg-[#1E293B] p-2 rounded-full hover:bg-black transition">
+            <a href="#" aria-label="Nagma Tours and Travels on X" className="bg-[#1E293B] p-2 rounded-full hover:bg-black transition">
               <span className="text-xs font-bold">𝕏</span>
             </a>
           </div>

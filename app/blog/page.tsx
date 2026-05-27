@@ -4,7 +4,7 @@ import CTASection from "@/components/CTASection";
 import { BLOG_POSTS } from "@/lib/blog-data";
 
 export const metadata = buildMetadata({
-  title: "Taxi Travel Guides & Route Tips | Nonstop Drop Taxi Blog",
+  title: "Taxi Travel Guides & Route Tips | Nagma Tours and Travels Blog",
   description: "Explore one way taxi travel guides, route details, fare information and tips for intercity travel across Tamil Nadu, Kerala and Karnataka.",
   path: "/blog",
 });

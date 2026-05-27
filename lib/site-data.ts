@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "Nonstop Drop Taxi",
+  name: "Nagma Tours and Travels",
   tagline: "One Way & Outstation Cab Service South India",
   phone: "+91 98809 82741",
   phoneTel: "+919880982741",
@@ -7,7 +7,7 @@ export const SITE = {
   email: "nonstopdroptaxi2026@gmail.com",
   url: "https://www.nonstopdroptaxi.com",
   description:
-    "Nonstop Drop Taxi provides convenient one way and outstation cab services across Tamil Nadu, Karnataka, Kerala and nearby regions. Well maintained vehicles, fair pricing and 24/7 booking support.",
+    "Nagma Tours and Travels provides convenient one way and outstation cab services across Tamil Nadu, Karnataka, Kerala and nearby regions. Well maintained vehicles, fair pricing and 24/7 booking support.",
   areas: ["Tamil Nadu", "Karnataka", "Kerala"],
   social: {
     facebook: "https://www.facebook.com/nonstopdroptaxi",

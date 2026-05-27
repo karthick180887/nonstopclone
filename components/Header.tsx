@@ -52,7 +52,7 @@ export default function Header() {
               <span className="text-xs font-bold">𝕏</span>
             </SocialIcon>
             <SocialIcon
-              href={`https://wa.me/${SITE.phoneWa}?text=${encodeURIComponent("Hi NonstopDropTaxi, I need a taxi booking")}`}
+              href={`https://wa.me/${SITE.phoneWa}?text=${encodeURIComponent("Hi Nagma Tours and Travels, I need a taxi booking")}`}
               label="WhatsApp"
               className="text-white hover:text-[#25D366]"
             >
@@ -72,10 +72,10 @@ export default function Header() {
       <div className="bg-white/95 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between min-h-[80px] gap-4">
-            <Link href="/" className="flex items-center gap-2 shrink-0" aria-label="Nonstop Drop Taxi Home">
+            <Link href="/" className="flex items-center gap-2 shrink-0" aria-label="Nagma Tours and Travels Home">
               <Image
                 src="/assets/logo/nonstop-logo.avif"
-                alt="Nonstop Drop Taxi Logo"
+                alt="Nagma Tours and Travels Logo"
                 width={160}
                 height={75}
                 className="h-[65px] md:h-[75px] w-auto object-contain"
@@ -103,7 +103,7 @@ export default function Header() {
               <a
                 href={`tel:${SITE.phoneTel}`}
                 className="hidden md:flex items-center gap-2 bg-gradient-to-r from-[#1FAE4B] to-[#FFC107] text-black px-6 py-2.5 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200"
-                aria-label="Call Nonstop Drop Taxi"
+                aria-label="Call Nagma Tours and Travels"
               >
                 <PhoneCall size={18} />
                 Book Now

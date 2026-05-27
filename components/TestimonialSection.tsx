@@ -10,7 +10,7 @@ export default function TestimonialSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1FAE4B]">Trusted by One Way Taxi Customers</h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Real feedback from travelers using Nonstop Drop Taxi across Tamil Nadu, Kerala and Karnataka.
+            Real feedback from travelers using Nagma Tours and Travels across Tamil Nadu, Kerala and Karnataka.
           </p>
         </div>
         <div className="grid grid-cols-3 gap-6 mb-6 text-center">

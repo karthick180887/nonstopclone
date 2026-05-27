@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site-data";
 import { whatsAppUrl } from "@/lib/utils";
 
 export const metadata = buildMetadata({
-  title: "About Nonstop Drop Taxi | One Way & Outstation Cab Service South India",
+  title: "About Nagma Tours and Travels | One Way & Outstation Cab Service South India",
   description: SITE.description,
   path: "/about",
 });
@@ -14,9 +14,9 @@ export default function AboutPage() {
     <>
       <section className="pt-28 pb-16 bg-gradient-to-b from-white to-[#F8FAFC]">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-6">About Nonstop Drop Taxi</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-6">About Nagma Tours and Travels</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Nonstop Drop Taxi is built to make intercity travel simple, reliable and transparent.
+            Nagma Tours and Travels is built to make intercity travel simple, reliable and transparent.
             We provide one way and outstation taxi services across Tamil Nadu, Kerala and Karnataka
             with professional drivers and clear pricing.
           </p>
@@ -26,7 +26,7 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F172A] mb-16">
-            Why Choose Nonstop Drop Taxi
+            Why Choose Nagma Tours and Travels
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
