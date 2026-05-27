@@ -181,13 +181,15 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
                   : "border-gray-200 hover:border-[#1FAE4B]/60"
               }`}
             >
-              <Image
-                src={v.image}
-                alt={`${v.label} taxi for one way travel`}
-                width={120}
-                height={60}
-                className="h-12 sm:h-14 w-full object-contain mb-1.5 mx-auto"
-              />
+              <div className="h-12 sm:h-14 w-full bg-gray-100 rounded-md flex items-center justify-center mb-1.5 mx-auto">
+                <Image
+                  src={v.image}
+                  alt={`${v.label} taxi for one way travel`}
+                  width={120}
+                  height={60}
+                  className="h-10 sm:h-12 w-auto max-w-full object-contain"
+                />
+              </div>
               <div className="text-[#0B6B2E] font-bold text-sm">
                 ₹{v.oneWayRate}
                 <span className="text-xs text-gray-500 font-normal"> / KM</span>

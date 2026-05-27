@@ -9,7 +9,7 @@ import {
   getCityLm,
 } from "@/lib/city-lm";
 import { buildMetadata } from "@/lib/seo";
-import { SITE } from "@/lib/site-data";
+import { LOWEST_ONE_WAY_RATE, SITE, VEHICLES } from "@/lib/site-data";
 
 type Props = { params: Promise<{ city: string }> };
 
@@ -91,7 +91,11 @@ export default async function CityDistrictPage({ params }: Props) {
                 trips.
               </p>
               <ul className="text-xs text-gray-600 space-y-1">
-                <li>• Sedan starts from ₹14 per KM</li>
+                {VEHICLES.map((v) => (
+                  <li key={v.id}>
+                    • {v.name}: ₹{v.oneWayRate} per KM (one way)
+                  </li>
+                ))}
                 <li>• Driver allowance ₹400 per trip</li>
                 <li>• Toll, parking & permit charges extra</li>
                 <li>• Suitable for airport, intercity and long distance travel</li>
@@ -105,7 +109,7 @@ export default async function CityDistrictPage({ params }: Props) {
           <h2 className="text-3xl font-bold text-[#0B6B2E] text-center mb-12">Popular Taxi Routes from {e}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {a.routes.map((s, l) => {
-              const d = cityCardEstimatedFare(s.distance, 14);
+              const d = cityCardEstimatedFare(s.distance, LOWEST_ONE_WAY_RATE);
               const href = cityDropTaxiHref(slug, s.to);
               const waMsg = `Hi, I want to book taxi from ${e} to ${s.to}.
 Distance: ${s.distance} km

@@ -47,7 +47,7 @@ const WHY_CHOOSE = [
   { title: "Experienced Drivers", desc: "Professional drivers for long distance routes." },
   { title: "Flexible Pickup", desc: "Choose your pickup time based on your schedule." },
   { title: "Transparent Fare", desc: "Clear per KM pricing with no hidden charges." },
-  { title: "Multiple Vehicle Options", desc: "Sedan, SUV and premium cars available." },
+  { title: "Multiple Vehicle Options", desc: "Mini, sedan, SUV, Innova and tempo traveller available." },
   { title: "Quick Booking", desc: "Instant confirmation via call or WhatsApp." },
 ] as const;
 
@@ -64,6 +64,7 @@ export default async function CityDropTaxiPage({ params }: Props) {
   if (!r) notFound();
 
   const n = (rate: number) => cityRouteVehicleFare(r.distance, rate);
+  const starter = DROP_TAXI_VEHICLES[0];
 
   const waBody = (vehicle: (typeof DROP_TAXI_VEHICLES)[number]) => {
     const fare = n(vehicle.rate).toLocaleString("en-IN");
@@ -105,11 +106,11 @@ Please confirm availability.`;
                 <p className="text-sm opacity-80">
                   {r.distance} km • {r.time}
                 </p>
-                <p className="text-2xl font-bold">₹{n(DROP_TAXI_VEHICLES[0].rate).toLocaleString("en-IN")}</p>
-                <p className="text-xs opacity-70 mt-1">Sedan • One Way Fare</p>
+                <p className="text-2xl font-bold">₹{n(starter.rate).toLocaleString("en-IN")}</p>
+                <p className="text-xs opacity-70 mt-1">{starter.name} • One Way Fare</p>
               </div>
               <a
-                href={`https://wa.me/${SITE.phoneWa}?text=${encodeURIComponent(waBody(DROP_TAXI_VEHICLES[0]))}`}
+                href={`https://wa.me/${SITE.phoneWa}?text=${encodeURIComponent(waBody(starter))}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-green-700 px-4 py-2 rounded-lg font-semibold text-sm shrink-0"
@@ -147,7 +148,7 @@ Please confirm availability.`;
                         <td className="px-4 py-4">
                           <div className="flex items-center gap-3">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={s.image} alt={s.name} className="w-14 h-10 object-contain" />
+                            <img src={s.image} alt={s.name} className="w-14 h-10 object-contain bg-gray-100 rounded" />
                             <div>
                               <span className="font-semibold text-[#0F172A]">{s.name}</span>
                               {l === 0 && (
@@ -182,7 +183,7 @@ Please confirm availability.`;
                   >
                     <div className="flex items-center gap-3">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={s.image} alt={s.name} className="w-14 h-10 object-contain" />
+                      <img src={s.image} alt={s.name} className="w-14 h-10 object-contain bg-gray-100 rounded" />
                       <div>
                         <div className="flex items-center gap-2">
                           <p className="font-semibold text-[#0F172A] text-sm">{s.name}</p>
@@ -211,12 +212,12 @@ Please confirm availability.`;
                 <h3 className="text-lg font-semibold mb-3">Quick Booking</h3>
                 <div className="text-center mb-4">
                   <span className="text-2xl font-bold text-green-600">
-                    ₹{n(DROP_TAXI_VEHICLES[0].rate).toLocaleString("en-IN")}
+                    ₹{n(starter.rate).toLocaleString("en-IN")}
                   </span>
-                  <p className="text-sm text-gray-500">Sedan Fare</p>
+                  <p className="text-sm text-gray-500">{starter.name} Fare</p>
                 </div>
                 <a
-                  href={`https://wa.me/${SITE.phoneWa}?text=${encodeURIComponent(waBody(DROP_TAXI_VEHICLES[0]))}`}
+                  href={`https://wa.me/${SITE.phoneWa}?text=${encodeURIComponent(waBody(starter))}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full text-center bg-green-600 text-white py-3 rounded-xl font-semibold mb-3"
@@ -270,14 +271,14 @@ Please confirm availability.`;
                   <span className="font-medium">{r.time}</span>
                 </div>
                 <div className="flex justify-between border-t pt-2 mt-1">
-                  <span className="text-gray-500">Sedan Fare</span>
+                  <span className="text-gray-500">{starter.name} Fare</span>
                   <span className="font-bold text-green-600 text-base">
-                    ₹{n(DROP_TAXI_VEHICLES[0].rate).toLocaleString("en-IN")}
+                    ₹{n(starter.rate).toLocaleString("en-IN")}
                   </span>
                 </div>
               </div>
               <a
-                href={`https://wa.me/${SITE.phoneWa}?text=${encodeURIComponent(waBody(DROP_TAXI_VEHICLES[0]))}`}
+                href={`https://wa.me/${SITE.phoneWa}?text=${encodeURIComponent(waBody(starter))}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-green-600 text-white py-3 rounded-xl text-center font-semibold mb-3"

@@ -48,8 +48,8 @@ export const VEHICLES = [
     id: "mini",
     name: "Mini",
     label: "MINI",
-    oneWayRate: 12,
-    roundTripRate: 11,
+    oneWayRate: 14,
+    roundTripRate: 13,
     passengers: "1–3",
     luggage: "1 Bag",
     tag: "Budget",
@@ -59,30 +59,19 @@ export const VEHICLES = [
     id: "sedan",
     name: "Sedan",
     label: "SEDAN",
-    oneWayRate: 14,
-    roundTripRate: 13,
+    oneWayRate: 15,
+    roundTripRate: 14,
     passengers: "1–4",
     luggage: "2 Bags",
     tag: "Best Price",
     image: "/assets/vehicles/swift-dzire-cab.avif",
   },
   {
-    id: "etios",
-    name: "Etios",
-    label: "ETIOS",
-    oneWayRate: 14,
-    roundTripRate: 13,
-    passengers: "1–4",
-    luggage: "2 Bags",
-    tag: "Most Booked",
-    image: "/assets/vehicles/etios-sedan-cab.avif",
-  },
-  {
     id: "suv",
     name: "SUV",
     label: "SUV",
-    oneWayRate: 19,
-    roundTripRate: 18,
+    oneWayRate: 20,
+    roundTripRate: 19,
     passengers: "1–6",
     luggage: "4 Bags",
     tag: "Family",
@@ -92,8 +81,8 @@ export const VEHICLES = [
     id: "innova",
     name: "Innova",
     label: "INNOVA",
-    oneWayRate: 20,
-    roundTripRate: 19,
+    oneWayRate: 22,
+    roundTripRate: 21,
     passengers: "1–7",
     luggage: "3 Bags",
     tag: "Premium",
@@ -110,12 +99,44 @@ export const VEHICLES = [
     tag: "Luxury",
     image: "/assets/vehicles/innova-crysta-cab-service.avif",
   },
+  {
+    id: "innova-hycross",
+    name: "Innova High Cross",
+    label: "INNOVA HIGH CROSS",
+    oneWayRate: 26,
+    roundTripRate: 25,
+    passengers: "1–7",
+    luggage: "4 Bags",
+    tag: "Elite",
+    image: "/assets/vehicles/innova-hycross-cab.webp",
+  },
+  {
+    id: "tempo-traveller",
+    name: "Tempo Traveller",
+    label: "TEMPO TRAVELLER",
+    oneWayRate: 30,
+    roundTripRate: 29,
+    passengers: "1–12",
+    luggage: "8 Bags",
+    tag: "Group",
+    image: "/assets/vehicles/tempo-traveller-cab.webp",
+  },
 ] as const;
+
+/** Lowest one-way per-km rate (Mini). */
+export const LOWEST_ONE_WAY_RATE = VEHICLES[0].oneWayRate;
+
+/** Default sedan rate used for route fare estimates on homepage cards. */
+export const DEFAULT_ESTIMATE_RATE = VEHICLES.find((v) => v.id === "sedan")?.oneWayRate ?? 15;
+
+export function estimateOneWayFare(distanceKm: number, ratePerKm = DEFAULT_ESTIMATE_RATE): number {
+  return Math.round(Math.max(distanceKm, SITE.minKmOneWay) * ratePerKm + SITE.driverBata);
+}
 
 export const WHY_CHOOSE = [
   {
     title: "Well Maintained Cars",
-    description: "Clean sedan and SUV options for long distance travel.",
+    description: "Clean mini, sedan, SUV and traveller options for long distance travel.",
   },
   {
     title: "Flexible Pickup",

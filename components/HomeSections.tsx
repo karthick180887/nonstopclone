@@ -52,7 +52,7 @@ export function VehiclePricingSection() {
             Transparent taxi pricing • One way & round trip fares • ₹400 driver allowance • Toll extra
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-5">
           {VEHICLES.map((v, index) => (
             <div
               key={v.id}
@@ -61,7 +61,7 @@ export function VehiclePricingSection() {
               }`}
             >
               <span className="text-[10px] bg-green-100 text-green-700 px-2 py-1 rounded-full">{v.tag}</span>
-              <div className="h-24 flex items-center justify-center my-3">
+              <div className="h-24 flex items-center justify-center my-3 bg-gray-100 rounded-lg">
                 <Image src={v.image} alt={v.name} width={130} height={80} className="h-full w-auto object-contain" />
               </div>
               <h3 className="text-lg font-bold text-center">{v.name}</h3>

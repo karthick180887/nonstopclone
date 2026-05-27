@@ -1,5 +1,6 @@
 import cityLmJson from "./city-lm-data.json";
 import cityOxJson from "./city-ox-order.json";
+import { LOWEST_ONE_WAY_RATE } from "./site-data";
 
 export type CityLmRoute = {
   to: string;
@@ -39,8 +40,8 @@ export function cityDropTaxiHref(fromSlug: string, toCityName: string): string {
   return `/city/${fromSlug}/${cityDropTaxiSlug(fromSlug, toCityName)}`;
 }
 
-/** Display fare on city cards: max(km,130)*14 + 400 (matches production bundle) */
-export function cityCardEstimatedFare(distanceKm: number, ratePerKm = 14): number {
+/** Display fare on city cards: max(km,130)*rate + 400 */
+export function cityCardEstimatedFare(distanceKm: number, ratePerKm = LOWEST_ONE_WAY_RATE): number {
   return Math.round(Math.max(distanceKm, 130) * ratePerKm + 400);
 }
 

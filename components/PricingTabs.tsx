@@ -63,7 +63,7 @@ export default function PricingTabs() {
         </div>
 
         {/* Vehicle pricing cards */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6 mb-8">
           {VEHICLES.map((v, index) => {
             const rate = mode === "oneway" ? v.oneWayRate : v.roundTripRate;
             const showPopular = mode === "oneway" && index === 0;
@@ -83,13 +83,15 @@ export default function PricingTabs() {
                     </span>
                   )
                 )}
-                <Image
-                  src={v.image}
-                  alt={`${v.label} taxi service`}
-                  width={140}
-                  height={80}
-                  className="mx-auto mb-3 h-16 w-auto object-contain group-hover:scale-105 transition"
-                />
+                <div className="mx-auto mb-3 h-16 w-full bg-gray-100 rounded-lg flex items-center justify-center">
+                  <Image
+                    src={v.image}
+                    alt={`${v.label} taxi service`}
+                    width={140}
+                    height={80}
+                    className="h-14 w-auto object-contain group-hover:scale-105 transition"
+                  />
+                </div>
                 <h3 className="text-center font-bold text-[#0B6B2E] text-base">{v.label}</h3>
                 <p className="text-center text-3xl font-extrabold text-[#1FAE4B] mt-2">₹{rate}/KM</p>
                 <p className="text-center text-xs text-gray-500 mt-1">Driver Bata ₹{SITE.driverBata}</p>

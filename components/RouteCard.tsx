@@ -1,6 +1,7 @@
 import Link from "next/link";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import type { RoutePage } from "@/lib/routes-data";
+import { LOWEST_ONE_WAY_RATE } from "@/lib/site-data";
 import { formatCurrency, whatsAppUrl } from "@/lib/utils";
 
 export default function RouteCard({ route }: { route: RoutePage }) {
@@ -15,7 +16,7 @@ export default function RouteCard({ route }: { route: RoutePage }) {
           {route.distanceKm} km • {route.duration}
         </p>
         <p className="text-xs text-gray-500 mt-2">
-          ₹14/km • Driver allowance ₹400 included • Toll extra
+          From ₹{LOWEST_ONE_WAY_RATE}/km • Driver allowance ₹400 included • Toll extra
         </p>
         <p className="text-xs text-green-700 mt-1">✓ Fixed fare • ✓ No hidden charges</p>
         <p className="text-2xl font-extrabold text-[#0B6B2E] mt-3">

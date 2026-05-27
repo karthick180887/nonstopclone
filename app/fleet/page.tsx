@@ -3,7 +3,8 @@ import { VehiclePricingSection } from "@/components/HomeSections";
 
 export const metadata = buildMetadata({
   title: "Fleet & Available Cars | Nonstop Drop Taxi",
-  description: "Available taxi fleet including Sedan, Etios, SUV, Innova and Innova Crysta for one way and outstation travel.",
+  description:
+    "Available taxi fleet including Mini, Sedan, SUV, Innova, Innova Crysta, Innova High Cross and Tempo Traveller for one way and outstation travel.",
   path: "/fleet",
 });
 
