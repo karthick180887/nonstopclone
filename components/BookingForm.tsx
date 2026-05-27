@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { estimateTripFare, SITE, VEHICLES } from "@/lib/site-data";
-import { buildFareMessage, whatsAppUrl } from "@/lib/utils";
 
 const TIME_OPTIONS = [
   "12:00 AM", "1:00 AM", "2:00 AM", "3:00 AM", "4:00 AM", "5:00 AM",
@@ -67,7 +66,8 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
     tripType: "oneway",
     vehicle: "Sedan",
   });
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [statusMessage, setStatusMessage] = useState("");
   const [mapsReady, setMapsReady] = useState(false);
   const [distanceKm, setDistanceKm] = useState<number | null>(null);
   const [distanceText, setDistanceText] = useState<string>("");
@@ -206,19 +206,32 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
       setStatus("error");
       return;
     }
-    setStatus("success");
-    const msg = buildFareMessage({
-      pickup: form.pickup,
-      drop: form.drop,
-      date: `${form.date} ${form.time}`,
-      vehicle: form.vehicle,
-      tripType: form.tripType === "oneway" ? "One Way" : "Round Trip",
-    });
-    const enrichedMsg = `${msg}
-
-Estimated Distance: ${distanceText || "Not calculated"}
-Estimated Fare: ${estimatedFare ? `₹${estimatedFare.toLocaleString("en-IN")}` : "Will be shared on confirmation"}`;
-    window.open(whatsAppUrl(enrichedMsg), "_blank");
+    setStatus("sending");
+    setStatusMessage("");
+    try {
+      const response = await fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...form,
+          tripType: form.tripType === "oneway" ? "One Way" : "Round Trip",
+          distanceText: distanceText || "Not calculated",
+          distanceKm: distanceKm ? Number(distanceKm.toFixed(1)) : null,
+          estimatedFare: estimatedFare ? `₹${estimatedFare.toLocaleString("en-IN")}` : "Not calculated",
+        }),
+      });
+      const data = await response.json();
+      if (!response.ok || !data.success) {
+        setStatus("error");
+        setStatusMessage(data.message || "Failed to send booking.");
+        return;
+      }
+      setStatus("success");
+      setStatusMessage("Booking sent to Telegram successfully.");
+    } catch {
+      setStatus("error");
+      setStatusMessage("Could not send booking. Please try again.");
+    }
   };
 
   return (
@@ -394,18 +407,19 @@ Estimated Fare: ${estimatedFare ? `₹${estimatedFare.toLocaleString("en-IN")}` 
       </div>
 
       {status === "error" && (
-        <p className="text-red-600 text-sm mt-3">Please fill all required fields.</p>
+        <p className="text-red-600 text-sm mt-3">{statusMessage || "Please fill all required fields."}</p>
       )}
       {status === "success" && (
-        <p className="text-green-700 text-sm mt-3">Opening WhatsApp to confirm your booking…</p>
+        <p className="text-green-700 text-sm mt-3">{statusMessage}</p>
       )}
 
       <button
         type="submit"
+        disabled={status === "sending"}
         className="mt-6 w-full bg-green-600 text-white py-3.5 rounded-xl font-bold hover:bg-green-700 transition flex items-center justify-center gap-2"
       >
         <WhatsAppIcon size={20} className="text-white" />
-        Check Fare Instantly
+        {status === "sending" ? "Sending Booking..." : "Send Booking"}
       </button>
       <p className="text-xs text-gray-500 text-center mt-2">
         Fixed fare • No hidden charges • 24/7 support
