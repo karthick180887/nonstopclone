@@ -13,7 +13,7 @@ const TIME_OPTIONS = [
   "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM", "11:00 PM",
 ];
 
-const GOOGLE_MAPS_API_KEY = "AIzaSyDrL9-n9B6VC3D9nfGJibVOCDkSWUyrdqo";
+const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
 const GOOGLE_MAPS_SCRIPT_ID = "google-maps-distance-matrix-script";
 
 declare global {
@@ -122,6 +122,11 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
   }, [mapsReady]);
 
   useEffect(() => {
+    if (!GOOGLE_MAPS_API_KEY) {
+      setDistanceError("Google Maps API key missing. Set NEXT_PUBLIC_GOOGLE_MAPS_API_KEY in Netlify environment.");
+      return;
+    }
+
     if (window.google?.maps?.DistanceMatrixService) {
       setMapsReady(true);
       return;
@@ -139,6 +144,11 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
     script.async = true;
     script.defer = true;
     script.onload = () => setMapsReady(true);
+    script.onerror = () => {
+      setDistanceError(
+        "Google Maps failed to load. Check API key, billing, enabled APIs, and HTTP referrer restrictions for this domain."
+      );
+    };
     document.body.appendChild(script);
   }, []);
 
