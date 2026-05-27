@@ -52,7 +52,7 @@ export function VehiclePricingSection() {
             Transparent taxi pricing • One way & round trip fares • ₹400 driver allowance • Toll extra
           </p>
         </div>
-        <div className="grid md:grid-cols-5 sm:grid-cols-2 gap-5">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
           {VEHICLES.map((v, index) => (
             <div
               key={v.id}

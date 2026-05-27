@@ -1,21 +1,6 @@
 {
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/city/[city]/page": "app/city/[city]/page.js",
-  "/page": "app/page.js",
-  "/tariff/page": "app/tariff/page.js",
-  "/terms-and-conditions/page": "app/terms-and-conditions/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/fleet/page": "app/fleet/page.js",
   "/about/page": "app/about/page.js",
-  "/pricing/page": "app/pricing/page.js",
-  "/services/page": "app/services/page.js",
-  "/booking/page": "app/booking/page.js",
-  "/one-way-taxi/page": "app/one-way-taxi/page.js",
-  "/faq/page": "app/faq/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/terms-of-service/page": "app/terms-of-service/page.js",
-  "/privacy-policy/page": "app/privacy-policy/page.js",
-  "/gk-web-designs/page": "app/gk-web-designs/page.js",
-  "/[slug]/page": "app/[slug]/page.js",
-  "/blog/[slug]/page": "app/blog/[slug]/page.js"
+  "/page": "app/page.js",
+  "/[slug]/page": "app/[slug]/page.js"
 }

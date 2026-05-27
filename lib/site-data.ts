@@ -45,6 +45,17 @@ export const FOOTER_LEGAL = [
 
 export const VEHICLES = [
   {
+    id: "mini",
+    name: "Mini",
+    label: "MINI",
+    oneWayRate: 12,
+    roundTripRate: 11,
+    passengers: "1–3",
+    luggage: "1 Bag",
+    tag: "Budget",
+    image: "/assets/vehicles/mini-car-cab.avif",
+  },
+  {
     id: "sedan",
     name: "Sedan",
     label: "SEDAN",

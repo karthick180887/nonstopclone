@@ -169,13 +169,13 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
 
       <div className="mt-4">
         <span className="block text-sm font-medium text-gray-700 mb-3">Select Vehicle</span>
-        <div className="grid grid-cols-2 gap-3 mt-2">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-2">
           {VEHICLES.map((v) => (
             <button
               key={v.id}
               type="button"
               onClick={() => update("vehicle", v.name)}
-              className={`border-2 rounded-xl p-3 text-center cursor-pointer transition-all duration-200 ${
+              className={`border-2 rounded-xl p-2.5 sm:p-3 text-center cursor-pointer transition-all duration-200 min-h-[132px] flex flex-col items-center justify-between ${
                 form.vehicle === v.name
                   ? "border-[#1FAE4B] bg-green-50 shadow-sm"
                   : "border-gray-200 hover:border-[#1FAE4B]/60"
@@ -186,7 +186,7 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
                 alt={`${v.label} taxi for one way travel`}
                 width={120}
                 height={60}
-                className="h-14 w-full object-contain mb-2 mx-auto"
+                className="h-12 sm:h-14 w-full object-contain mb-1.5 mx-auto"
               />
               <div className="text-[#0B6B2E] font-bold text-sm">
                 ₹{v.oneWayRate}
