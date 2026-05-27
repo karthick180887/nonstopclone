@@ -1,0 +1,117 @@
+Google Ads Campaign (Fine-Tuned)
+================================
+
+Campaign:
+- Campaign #1
+- Asset Group: Asset Group 1
+- Final URL: https://www.droptaxi.live/
+- Ad Strength: Average (target: Excellent)
+- Business Name: droptaxi.live
+
+Top Priority Fixes (Do First)
+-----------------------------
+1) Add audience signals (currently none)
+2) Add missing creative assets:
+   - 3 horizontal images
+   - 2 square images
+   - 1 video (minimum)
+3) Complete sitelink descriptions (all sitelinks)
+4) Align CTA copy with current lead flow (Telegram/Call, not WhatsApp-only)
+
+Recommended Audience Signals
+----------------------------
+- In-market: Taxis & ride services, Car rental, Travel booking
+- Custom intent keywords:
+  - one way taxi
+  - outstation taxi
+  - chennai to madurai taxi
+  - airport drop taxi
+  - tamil nadu taxi service
+- Remarketing:
+  - All site visitors (30 days)
+  - Booking form visitors
+  - Pricing page visitors
+- Customer match (if available): previous leads/customers
+
+Refined Headlines (Use/Rotate)
+------------------------------
+1) One Way Taxi, Fixed Fare
+2) Outstation Taxi 24/7
+3) Book Taxi Across South India
+4) Airport Drop Taxi Service
+5) Transparent Taxi Pricing
+6) No Hidden Charges
+7) Instant Taxi Booking
+8) Professional Drivers
+9) Clean & Comfortable Cabs
+10) droptaxi.live Taxi Service
+11) Intercity Taxi in Tamil Nadu
+12) Round Trip Taxi Available
+13) Fast Booking Confirmation
+14) Reliable Taxi Near You
+15) Call Now to Book Taxi
+
+Refined Long Headlines
+----------------------
+1) Book One Way And Outstation Taxis Across South India With Transparent Fixed Fares
+2) Need An Airport Drop Or Intercity Ride? Book 24/7 With Instant Confirmation
+3) Travel Across Tamil Nadu, Karnataka And Kerala In Clean, Driver-Verified Cabs
+4) Get Fixed Fare Taxi Booking With No Hidden Charges For One Way And Round Trips
+5) droptaxi.live Offers Reliable Outstation Taxi Service With Easy Booking Support
+
+Refined Descriptions
+--------------------
+1) Book one way and outstation taxis with fixed fare, clean vehicles and 24/7 support.
+2) Need an airport or intercity ride? Get transparent pricing and fast booking confirmation.
+3) Pay fair rates with no hidden charges. Professional drivers and reliable on-time pickups.
+4) Compare vehicle options and book instantly for Tamil Nadu, Karnataka and Kerala routes.
+5) Trusted taxi service for one-way drops, round trips and airport transfers across South India.
+
+Sitelinks (Final Suggested Set)
+-------------------------------
+1) Our Fleet
+   - Desc 1: Mini, Sedan, SUV, Innova Options
+   - Desc 2: Clean Cars For Every Budget
+2) Pricing Information
+   - Desc 1: Fixed Fare With No Hidden Charges
+   - Desc 2: One Way And Round Trip Rates
+3) One Way Taxi Service
+   - Desc 1: Intercity Drops Across South India
+   - Desc 2: No Return Fare On One Way Trips
+4) Read The FAQs
+   - Desc 1: Billing, Driver Bata, Booking Help
+   - Desc 2: Clear Answers Before You Book
+5) Airport Taxi Service
+   - Desc 1: 24/7 Airport Pickup And Drop
+   - Desc 2: On-Time Service, Fixed Pricing
+6) Contact & Booking
+   - Desc 1: Call Or Telegram For Quick Booking
+   - Desc 2: Instant Response From Support Team
+
+Image/Video Asset Plan
+----------------------
+- Horizontal images to add:
+  1) Family boarding taxi (daytime)
+  2) Driver helping with luggage (airport)
+  3) Highway travel shot with clean sedan/SUV
+- Square images to add:
+  1) App/booking style visual with fixed fare text
+  2) Vehicle lineup (Mini to Tempo Traveller)
+- Video (15-20 sec):
+  - Hook: "One Way Taxi With Fixed Fare"
+  - Mid: Vehicle visuals + route coverage
+  - End: "Book Now on droptaxi.live"
+
+Policy/Conversion Notes
+-----------------------
+- Avoid unsupported superlatives ("best", "#1") unless substantiated.
+- Ensure call assets and lead flow are consistent with landing page CTA.
+- Add conversion tracking events:
+  - Call button click
+  - Booking form submit
+  - Telegram booking success
+
+Expected Impact
+---------------
+- Moving Average -> Excellent ad strength should improve relevance and conversion volume.
+- Better audience signals + stronger creatives typically reduce wasted impressions.

@@ -5,7 +5,7 @@ export const SITE = {
   phoneTel: "+919880982741",
   phoneWa: "919880982741",
   email: "nonstopdroptaxi2026@gmail.com",
-  url: "https://www.nonstopdroptaxi.com",
+  url: "https://www.droptaxi.live",
   description:
     "droptaxi.live provides convenient one way and outstation cab services across Tamil Nadu, Karnataka, Kerala and nearby regions. Well maintained vehicles, fair pricing and 24/7 booking support.",
   areas: ["Tamil Nadu", "Karnataka", "Kerala"],

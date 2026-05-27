@@ -1,0 +1,74 @@
+Google Ads Policy Appeal (Combined)
+====================================
+
+Status you reported:
+- Compromised Site: Under appeal (In progress)
+- Malicious software: Not eligible
+- Campaign published but cannot run
+
+Final URL in ads:
+https://www.droptaxi.live/
+
+---
+
+APPEAL TEXT (paste in Policy Manager)
+-------------------------------------
+
+Subject: Policy Review Request – Compromised Site + Malicious Software – https://www.droptaxi.live/
+
+Hello Google Ads Policy Team,
+
+Our campaign final URL is:
+https://www.droptaxi.live/
+
+We received policy flags for:
+1) Compromised Site
+2) Malicious software
+
+We completed remediation:
+
+- Removed cross-domain references to legacy domains from site metadata/canonical URLs
+- Set canonical, sitemap, robots, and structured data to https://www.droptaxi.live/
+- Audited all scripts (only Google Ads gtag and first-party Next.js assets)
+- Verified no unauthorized redirects, injected scripts, or malware payloads
+- Rotated credentials and secured hosting/admin access (2FA)
+- Redeployed clean build and purged CDN/cache
+- Reviewed Search Console Security Issues and Manual Actions
+- Verified Safe Browsing status for droptaxi.live
+
+The landing page is clean and safe for users.
+
+Please rescan https://www.droptaxi.live/ and re-approve our ads.
+
+Thank you.
+
+---
+
+IF REJECTED AGAIN (follow-up)
+-----------------------------
+
+Please provide the exact affected URL/path, redirect chain, or malware sample detected by Googlebot so we can fix the specific issue immediately.
+
+---
+
+CHECKLIST BEFORE RE-APPEAL
+------------------------
+[ ] Search Console property added for https://www.droptaxi.live/
+[ ] No Security Issues / Manual Actions open
+[ ] Safe Browsing: no issues for droptaxi.live
+[ ] Ads final URL = https://www.droptaxi.live/ (not Netlify subdomain only)
+[ ] No links in page source to old/compromised domains
+[ ] Clear cache + redeploy after code fix
+[ ] Wait 24-72h after deploy before second appeal
+
+---
+
+LIKELY ROOT CAUSE FOUND
+-----------------------
+Live page previously exposed canonical/metadata pointing to:
+https://www.nonstopdroptaxi.com
+
+This can cause Google to associate your ad destination with another domain history.
+Code fix applied: SITE.url -> https://www.droptaxi.live
+
+After deploy, verify page source no longer contains nonstopdroptaxi.com.
