@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
-import { VEHICLES, SITE } from "@/lib/site-data";
+import { estimateTripFare, SITE, VEHICLES } from "@/lib/site-data";
 import { buildFareMessage, whatsAppUrl } from "@/lib/utils";
 
 const TIME_OPTIONS = [
@@ -12,6 +12,40 @@ const TIME_OPTIONS = [
   "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM",
   "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM", "11:00 PM",
 ];
+
+const GOOGLE_MAPS_API_KEY = "AIzaSyDrL9-n9B6VC3D9nfGJibVOCDkSWUyrdqo";
+const GOOGLE_MAPS_SCRIPT_ID = "google-maps-distance-matrix-script";
+
+declare global {
+  interface Window {
+    google?: {
+      maps?: {
+        DistanceMatrixService: new () => {
+          getDistanceMatrix: (
+            request: {
+              origins: string[];
+              destinations: string[];
+              travelMode: string;
+              unitSystem: number;
+            },
+            callback: (response: DistanceMatrixResponse | null, status: string) => void
+          ) => void;
+        };
+        TravelMode: { DRIVING: string };
+        UnitSystem: { METRIC: number };
+      };
+    };
+  }
+}
+
+type DistanceMatrixResponse = {
+  rows?: Array<{
+    elements?: Array<{
+      status?: string;
+      distance?: { value: number; text: string };
+    }>;
+  }>;
+};
 
 export default function BookingForm({ compact = false }: { compact?: boolean }) {
   const [form, setForm] = useState({
@@ -25,10 +59,100 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
     vehicle: "Sedan",
   });
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [mapsReady, setMapsReady] = useState(false);
+  const [distanceKm, setDistanceKm] = useState<number | null>(null);
+  const [distanceText, setDistanceText] = useState<string>("");
+  const [distanceError, setDistanceError] = useState<string>("");
+  const [isCalculatingDistance, setIsCalculatingDistance] = useState(false);
+
+  const selectedVehicle = useMemo(
+    () => VEHICLES.find((v) => v.name === form.vehicle) ?? VEHICLES.find((v) => v.id === "sedan") ?? VEHICLES[0],
+    [form.vehicle]
+  );
+  const currentRate = form.tripType === "roundtrip" ? selectedVehicle.roundTripRate : selectedVehicle.oneWayRate;
+  const estimatedFare = distanceKm
+    ? estimateTripFare(distanceKm, currentRate, form.tripType as "oneway" | "roundtrip", selectedVehicle.id)
+    : null;
 
   const update = (field: string, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
   };
+
+  const calculateDistance = useCallback((pickup: string, drop: string) => {
+    if (!mapsReady || !window.google?.maps?.DistanceMatrixService) return;
+    if (!pickup.trim() || !drop.trim()) return;
+
+    setIsCalculatingDistance(true);
+    setDistanceError("");
+
+    const service = new window.google.maps.DistanceMatrixService();
+    service.getDistanceMatrix(
+      {
+        origins: [pickup],
+        destinations: [drop],
+        travelMode: window.google.maps.TravelMode.DRIVING,
+        unitSystem: window.google.maps.UnitSystem.METRIC,
+      },
+      (response: DistanceMatrixResponse | null, status: string) => {
+        setIsCalculatingDistance(false);
+        if (status !== "OK") {
+          setDistanceKm(null);
+          setDistanceText("");
+          setDistanceError("Unable to calculate distance right now.");
+          return;
+        }
+        const element = response?.rows?.[0]?.elements?.[0];
+        if (!element || element.status !== "OK") {
+          setDistanceKm(null);
+          setDistanceText("");
+          setDistanceError("Please enter valid pickup and drop locations.");
+          return;
+        }
+        if (!element.distance) {
+          setDistanceKm(null);
+          setDistanceText("");
+          setDistanceError("Distance data not available for this route.");
+          return;
+        }
+        const km = element.distance.value / 1000;
+        setDistanceKm(km);
+        setDistanceText(element.distance.text);
+      }
+    );
+  }, [mapsReady]);
+
+  useEffect(() => {
+    if (window.google?.maps?.DistanceMatrixService) {
+      setMapsReady(true);
+      return;
+    }
+
+    const existing = document.getElementById(GOOGLE_MAPS_SCRIPT_ID) as HTMLScriptElement | null;
+    if (existing) {
+      existing.addEventListener("load", () => setMapsReady(true), { once: true });
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.id = GOOGLE_MAPS_SCRIPT_ID;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}`;
+    script.async = true;
+    script.defer = true;
+    script.onload = () => setMapsReady(true);
+    document.body.appendChild(script);
+  }, []);
+
+  useEffect(() => {
+    if (!mapsReady) return;
+    if (!form.pickup.trim() || !form.drop.trim()) {
+      setDistanceKm(null);
+      setDistanceText("");
+      setDistanceError("");
+      return;
+    }
+    const timer = setTimeout(() => calculateDistance(form.pickup, form.drop), 600);
+    return () => clearTimeout(timer);
+  }, [calculateDistance, form.pickup, form.drop, mapsReady]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,7 +168,11 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
       vehicle: form.vehicle,
       tripType: form.tripType === "oneway" ? "One Way" : "Round Trip",
     });
-    window.open(whatsAppUrl(msg), "_blank");
+    const enrichedMsg = `${msg}
+
+Estimated Distance: ${distanceText || "Not calculated"}
+Estimated Fare: ${estimatedFare ? `₹${estimatedFare.toLocaleString("en-IN")}` : "Will be shared on confirmation"}`;
+    window.open(whatsAppUrl(enrichedMsg), "_blank");
   };
 
   return (
@@ -198,6 +326,23 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
             </button>
           ))}
         </div>
+      </div>
+
+      <div className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-3">
+        <p className="text-sm font-semibold text-gray-800">Distance & Fare Estimate</p>
+        <p className="text-xs text-gray-600 mt-1">
+          Distance:{" "}
+          {isCalculatingDistance
+            ? "Calculating..."
+            : distanceText
+              ? `${distanceText} (${distanceKm?.toFixed(1)} km)`
+              : "Enter pickup and drop to calculate"}
+        </p>
+        <p className="text-xs text-gray-600 mt-1">
+          Fare:{" "}
+          {estimatedFare ? `₹${estimatedFare.toLocaleString("en-IN")}` : "Select locations to see fare estimate"}
+        </p>
+        {distanceError && <p className="text-xs text-red-600 mt-1">{distanceError}</p>}
       </div>
 
       {status === "error" && (
