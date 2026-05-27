@@ -13,10 +13,13 @@ export const SITE = {
     facebook: "https://www.facebook.com/nonstopdroptaxi",
     instagram: "https://www.instagram.com/nonstopdroptaxi",
   },
+  /** Default / Mini one-way driver bata (legacy references). */
   driverBata: 400,
-  minKmOneWay: 130,
-  minKmRoundTrip: 250,
+  minKmOneWay: 150,
+  minKmRoundTrip: 300,
 } as const;
+
+export type TripType = "oneway" | "roundtrip";
 
 export const NAV_LINKS = [
   { name: "Home", path: "/" },
@@ -54,6 +57,8 @@ export const VEHICLES = [
     luggage: "1 Bag",
     tag: "Budget",
     image: "/assets/vehicles/mini-car-cab.avif",
+    driverBataOneWay: 400,
+    driverBataRoundTrip: 400,
   },
   {
     id: "sedan",
@@ -65,6 +70,8 @@ export const VEHICLES = [
     luggage: "2 Bags",
     tag: "Best Price",
     image: "/assets/vehicles/swift-dzire-cab.avif",
+    driverBataOneWay: 500,
+    driverBataRoundTrip: 500,
   },
   {
     id: "suv",
@@ -76,6 +83,8 @@ export const VEHICLES = [
     luggage: "4 Bags",
     tag: "Family",
     image: "/assets/vehicles/ertiga-mpv-taxi.avif",
+    driverBataOneWay: 500,
+    driverBataRoundTrip: 500,
   },
   {
     id: "innova",
@@ -87,6 +96,8 @@ export const VEHICLES = [
     luggage: "3 Bags",
     tag: "Premium",
     image: "/assets/vehicles/innova-mpv-taxi.avif",
+    driverBataOneWay: 500,
+    driverBataRoundTrip: 500,
   },
   {
     id: "innova-crysta",
@@ -98,6 +109,8 @@ export const VEHICLES = [
     luggage: "3 Bags",
     tag: "Luxury",
     image: "/assets/vehicles/innova-crysta-cab-service.avif",
+    driverBataOneWay: 500,
+    driverBataRoundTrip: 500,
   },
   {
     id: "innova-hycross",
@@ -109,6 +122,8 @@ export const VEHICLES = [
     luggage: "4 Bags",
     tag: "Elite",
     image: "/assets/vehicles/innova-hycross-cab.webp",
+    driverBataOneWay: 500,
+    driverBataRoundTrip: 500,
   },
   {
     id: "tempo-traveller",
@@ -120,8 +135,36 @@ export const VEHICLES = [
     luggage: "8 Bags",
     tag: "Group",
     image: "/assets/vehicles/tempo-traveller-cab.webp",
+    driverBataOneWay: 500,
+    driverBataRoundTrip: 800,
   },
 ] as const;
+
+export type Vehicle = (typeof VEHICLES)[number];
+
+export function getDriverBata(vehicle: Pick<Vehicle, "driverBataOneWay" | "driverBataRoundTrip">, tripType: TripType): number {
+  return tripType === "roundtrip" ? vehicle.driverBataRoundTrip : vehicle.driverBataOneWay;
+}
+
+export function vehicleIdForOneWayRate(ratePerKm: number): Vehicle["id"] {
+  return VEHICLES.find((v) => v.oneWayRate === ratePerKm)?.id ?? "sedan";
+}
+
+export function estimateTripFare(
+  distanceKm: number,
+  ratePerKm: number,
+  tripType: TripType = "oneway",
+  vehicleId?: Vehicle["id"]
+): number {
+  const minKm = tripType === "roundtrip" ? SITE.minKmRoundTrip : SITE.minKmOneWay;
+  const vehicle = vehicleId ? VEHICLES.find((v) => v.id === vehicleId) : undefined;
+  const resolved =
+    vehicle ??
+    VEHICLES.find((v) => (tripType === "roundtrip" ? v.roundTripRate : v.oneWayRate) === ratePerKm) ??
+    VEHICLES[0];
+  const bata = getDriverBata(resolved, tripType);
+  return Math.round(Math.max(distanceKm, minKm) * ratePerKm + bata);
+}
 
 /** Lowest one-way per-km rate (Mini). */
 export const LOWEST_ONE_WAY_RATE = VEHICLES[0].oneWayRate;
@@ -129,8 +172,8 @@ export const LOWEST_ONE_WAY_RATE = VEHICLES[0].oneWayRate;
 /** Default sedan rate used for route fare estimates on homepage cards. */
 export const DEFAULT_ESTIMATE_RATE = VEHICLES.find((v) => v.id === "sedan")?.oneWayRate ?? 15;
 
-export function estimateOneWayFare(distanceKm: number, ratePerKm = DEFAULT_ESTIMATE_RATE): number {
-  return Math.round(Math.max(distanceKm, SITE.minKmOneWay) * ratePerKm + SITE.driverBata);
+export function estimateOneWayFare(distanceKm: number, ratePerKm: number = DEFAULT_ESTIMATE_RATE): number {
+  return estimateTripFare(distanceKm, ratePerKm, "oneway", vehicleIdForOneWayRate(ratePerKm));
 }
 
 export const WHY_CHOOSE = [

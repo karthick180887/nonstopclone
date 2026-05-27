@@ -87,7 +87,7 @@ export default async function CityDistrictPage({ params }: Props) {
               <h3 className="font-semibold text-[#0B6B2E] mb-3">Fare & Travel Details for Taxi from {e}</h3>
               <p className="text-gray-700 text-sm leading-relaxed mb-3">
                 Taxi services from {e} are available for one way, round trip and outstation travel across Tamil Nadu and
-                nearby states. Fare is calculated based on distance travelled with a minimum 130 KM billing for one way
+                nearby states. Fare is calculated based on distance travelled with a minimum {SITE.minKmOneWay} KM billing for one way
                 trips.
               </p>
               <ul className="text-xs text-gray-600 space-y-1">
@@ -96,7 +96,7 @@ export default async function CityDistrictPage({ params }: Props) {
                     • {v.name}: ₹{v.oneWayRate} per KM (one way)
                   </li>
                 ))}
-                <li>• Driver allowance ₹400 per trip</li>
+                <li>• Driver bata ₹400–₹500 per trip (by vehicle)</li>
                 <li>• Toll, parking & permit charges extra</li>
                 <li>• Suitable for airport, intercity and long distance travel</li>
               </ul>
@@ -163,7 +163,7 @@ Please share fare and availability.`;
           <h2 className="text-2xl font-bold text-[#0B6B2E] mb-4">Why Choose Nonstop Drop Taxi in {e}</h2>
           <ul className="text-gray-700 space-y-2">
             <li>• One way pricing based on distance travelled</li>
-            <li>• ₹400 driver allowance per trip</li>
+            <li>• Driver bata ₹400–₹500 per trip (Tempo round trip ₹800)</li>
             <li>• Toll, parking & permit charges extra</li>
             <li>• Verified drivers and clean vehicles</li>
             <li>• 24/7 call and WhatsApp booking support</li>
@@ -182,7 +182,10 @@ Please share fare and availability.`;
             </div>
             <div>
               <h3 className="font-semibold">What is the minimum km billing?</h3>
-              <p>Minimum billing is 130 KM for one way trips with ₹400 driver allowance.</p>
+              <p>
+                Minimum billing is {SITE.minKmOneWay} KM for one way trips ({SITE.minKmRoundTrip} KM for round trip). Driver
+                bata is ₹400 for Mini, ₹500 for Sedan and above; Tempo Traveller round trip driver bata is ₹800.
+              </p>
             </div>
             <div>
               <h3 className="font-semibold">Are toll charges included?</h3>

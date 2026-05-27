@@ -6,7 +6,7 @@ import { Phone } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import SectionTitle from "./SectionTitle";
 import { VEHICLES, SITE } from "@/lib/site-data";
-import { ONE_WAY_TERMS, ROUND_TRIP_TERMS, PRICING_NOTES } from "@/lib/services-data";
+import { formatDriverBataLabel, ONE_WAY_TERMS, ROUND_TRIP_TERMS, PRICING_NOTES } from "@/lib/services-data";
 import { buildFareMessage, whatsAppUrl, cn } from "@/lib/utils";
 
 type TripMode = "oneway" | "roundtrip";
@@ -94,7 +94,8 @@ export default function PricingTabs() {
                 </div>
                 <h3 className="text-center font-bold text-[#0B6B2E] text-base">{v.label}</h3>
                 <p className="text-center text-3xl font-extrabold text-[#1FAE4B] mt-2">₹{rate}/KM</p>
-                <p className="text-center text-xs text-gray-500 mt-1">Driver Bata ₹{SITE.driverBata}</p>
+                <p className="text-center text-xs text-gray-500 mt-1">{formatDriverBataLabel(v, mode)}</p>
+                <p className="text-center text-[10px] text-gray-400">Min {mode === "oneway" ? SITE.minKmOneWay : SITE.minKmRoundTrip} KM</p>
                 <p className="text-center text-xs text-gray-600 mt-2">{tollNote}</p>
               </div>
             );

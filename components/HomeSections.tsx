@@ -49,7 +49,7 @@ export function VehiclePricingSection() {
             One Way Taxi Fare by Vehicle – Transparent Pricing
           </h2>
           <p className="text-gray-600 mt-2 text-sm">
-            Transparent taxi pricing • One way & round trip fares • ₹400 driver allowance • Toll extra
+            Transparent taxi pricing • Min {SITE.minKmOneWay} KM one way / {SITE.minKmRoundTrip} KM round trip • Driver bata by vehicle • Toll extra
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-5">
@@ -71,6 +71,9 @@ export function VehiclePricingSection() {
                 </p>
                 <p className="text-gray-700 text-sm font-semibold">
                   ₹{v.roundTripRate}/KM <span className="text-[10px] text-gray-500 ml-1">Round Trip Fare</span>
+                </p>
+                <p className="text-[11px] text-gray-500 mt-1">
+                  Bata ₹{v.driverBataOneWay} (OW) · ₹{v.driverBataRoundTrip} (RT)
                 </p>
               </div>
               <div className="flex justify-center gap-4 text-xs text-gray-600 mt-2">

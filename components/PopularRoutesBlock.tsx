@@ -6,7 +6,7 @@ import { Clock, MapPin, Phone, X } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import type { RoutePage } from "@/lib/routes-data";
 import { ROUTE_PAGES } from "@/lib/routes-data";
-import { DEFAULT_ESTIMATE_RATE, LOWEST_ONE_WAY_RATE, SITE } from "@/lib/site-data";
+import { DEFAULT_ESTIMATE_RATE, LOWEST_ONE_WAY_RATE, SITE, VEHICLES } from "@/lib/site-data";
 import { formatCurrency, whatsAppUrl } from "@/lib/utils";
 
 function fareLabel(route: RoutePage) {
@@ -15,10 +15,11 @@ function fareLabel(route: RoutePage) {
 
 function breakdownFor(route: RoutePage) {
   const totalKm = Math.max(route.distanceKm, SITE.minKmOneWay);
+  const sedan = VEHICLES.find((v) => v.id === "sedan")!;
   return {
     perKmRate: `₹${DEFAULT_ESTIMATE_RATE} / KM`,
     totalKm,
-    driverAllowance: "₹400 Included",
+    driverAllowance: `₹${sedan.driverBataOneWay} Included (Sedan)`,
     tollCharges: "Toll & parking as per actual",
   };
 }
@@ -66,7 +67,7 @@ export default function PopularRoutesBlock() {
                     </span>
                   </div>
                   <p className="text-xs text-gray-400 mt-2">
-                    From ₹{LOWEST_ONE_WAY_RATE}/km • Driver allowance ₹400 included • Toll extra
+                    From ₹{LOWEST_ONE_WAY_RATE}/km • Driver bata from ₹{SITE.driverBata} • Toll extra
                   </p>
                   <p className="text-xs text-[#1FAE4B] font-medium mt-1">
                     ✓ Fixed fare &nbsp;•&nbsp; ✓ No hidden charges

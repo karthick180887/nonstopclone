@@ -1,3 +1,5 @@
+import { SITE } from "./site-data";
+
 export const HOME_FAQS = [
   {
     question: "What is one way drop taxi?",
@@ -6,13 +8,12 @@ export const HOME_FAQS = [
   },
   {
     question: "What is the minimum distance for one way taxi?",
-    answer:
-      "Minimum billing is 130 KM for one way trips. Even if your actual distance is lower, fare is calculated based on minimum KM plus driver bata.",
+    answer: `Minimum billing is ${SITE.minKmOneWay} KM for one way trips. Even if your actual distance is lower, fare is calculated based on minimum KM plus driver bata.`,
   },
   {
     question: "What is driver bata?",
     answer:
-      "Driver bata is a fixed allowance of ₹400 per trip (₹400 per day for round trips) paid to the driver for food and accommodation during long journeys.",
+      "Driver bata is a fixed allowance paid to the driver for food and rest on long trips. Mini is ₹400; Sedan, SUV and Innova variants are ₹500 one way; Tempo Traveller round trip driver bata is ₹800.",
   },
   {
     question: "Are toll charges included in the fare?",
@@ -36,7 +37,7 @@ export const PAGE_FAQS: Record<string, { question: string; answer: string }[]> =
   "one-way-taxi": [
     {
       question: "How is one way taxi fare calculated?",
-      answer: "Fare = (Distance × Per KM Rate) + ₹400 driver bata. Minimum 130 KM billing applies for one way trips.",
+      answer: `Fare = (Distance × Per KM Rate) + driver bata. Minimum ${SITE.minKmOneWay} KM billing applies. Driver bata is ₹400 for Mini and ₹500 for Sedan, SUV, Innova and Tempo Traveller (one way).`,
     },
     {
       question: "Can I book one way taxi for airport drop?",

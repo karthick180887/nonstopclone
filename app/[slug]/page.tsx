@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { buildTaxiSlug, findOdRouteBySlug, ROUTE_OD } from "@/lib/route-od";
+import { SITE } from "@/lib/site-data";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -40,7 +41,10 @@ export default async function RoutePage({ params }: Props) {
       {
         "@type": "Question",
         name: "Is driver allowance included?",
-        acceptedAnswer: { "@type": "Answer", text: "Yes, ₹400 driver allowance is included." },
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, driver allowance is included (amount varies by vehicle; Mini from ₹400).",
+        },
       },
     ],
   };
@@ -76,7 +80,7 @@ export default async function RoutePage({ params }: Props) {
                 <p>{route.perKm}</p>
                 <p>{route.driverAllowance}</p>
                 <p>Toll & parking extra</p>
-                <p className="text-xs text-gray-500">Minimum 130 KM billing applies</p>
+                <p className="text-xs text-gray-500">Minimum {SITE.minKmOneWay} KM billing applies</p>
               </div>
             </div>
 
@@ -153,7 +157,7 @@ export default async function RoutePage({ params }: Props) {
             <p>
               <strong>Is driver allowance included?</strong>
               <br />
-              Yes, ₹400 driver allowance is included in the fare.
+              Yes, driver allowance is included. Amount depends on vehicle (Mini ₹400; Sedan & above ₹500).
             </p>
             <p>
               <strong>Are toll charges included?</strong>

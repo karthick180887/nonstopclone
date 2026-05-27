@@ -147,7 +147,7 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
           >
             <div className="text-gray-900 font-bold text-sm">One Way</div>
             <div className="text-gray-500 text-xs mt-0.5">Min {SITE.minKmOneWay} KM</div>
-            <div className="text-[#0B6B2E] text-xs font-medium mt-1">Driver Bata: ₹{SITE.driverBata}</div>
+            <div className="text-[#0B6B2E] text-xs font-medium mt-1">Driver Bata: ₹400–₹500 by vehicle</div>
           </button>
           <button
             type="button"
@@ -162,7 +162,7 @@ export default function BookingForm({ compact = false }: { compact?: boolean }) 
           >
             <div className="text-gray-900 font-bold text-sm">Round Trip</div>
             <div className="text-gray-500 text-xs mt-0.5">Min {SITE.minKmRoundTrip} KM / Day</div>
-            <div className="text-[#0B6B2E] text-xs font-medium mt-1">Driver Bata: ₹{SITE.driverBata}/Day</div>
+            <div className="text-[#0B6B2E] text-xs font-medium mt-1">Driver Bata: ₹400–₹800 by vehicle</div>
           </button>
         </div>
       </fieldset>

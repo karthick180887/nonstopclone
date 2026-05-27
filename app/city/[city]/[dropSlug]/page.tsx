@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props) {
   if (!r) return {};
   return buildMetadata({
     title: `${a.city} to ${r.to} Taxi Fare | Nonstop Drop Taxi`,
-    description: `Book ${a.city} to ${r.to} one way taxi. ${r.distance} km, approx ${r.time}. Fixed per KM pricing with ₹400 driver allowance.`,
+    description: `Book ${a.city} to ${r.to} one way taxi. ${r.distance} km, approx ${r.time}. Fixed per KM pricing with driver bata from ₹400 (Mini).`,
     path: `/city/${e}/${dropSlug}`,
   });
 }
@@ -95,8 +95,8 @@ Please confirm availability.`;
           {a.city} → {r.to} Drop Taxi
         </h1>
         <p className="text-gray-600 text-sm mb-6">
-          Travel {r.distance} km in approx {r.time}. Fixed per KM pricing with ₹400 driver allowance. Suitable for
-          outstation and one way trips.
+          Travel {r.distance} km in approx {r.time}. Minimum {SITE.minKmOneWay} KM billing; driver bata from ₹400 (Mini) to
+          ₹500 by vehicle. Suitable for outstation and one way trips.
         </p>
 
         <div className="grid lg:grid-cols-3 gap-8">
