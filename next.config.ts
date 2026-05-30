@@ -9,11 +9,11 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://maps.googleapis.com",
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://maps.googleapis.com https://googleads.g.doubleclick.net",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https:",
       "font-src 'self' data:",
-      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://maps.googleapis.com https://api.telegram.org",
+      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://maps.googleapis.com https://api.telegram.org https://www.google.com https://googleads.g.doubleclick.net",
       "frame-src https://www.googletagmanager.com",
       "base-uri 'self'",
       "form-action 'self'",
