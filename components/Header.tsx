@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Facebook, Instagram, Menu, PhoneCall, X } from "lucide-react";
+import { Menu, PhoneCall, X } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { NAV_LINKS, SITE } from "@/lib/site-data";
 import MobileMenu from "./MobileMenu";
@@ -42,12 +42,6 @@ export default function Header() {
       <div className="bg-[#0B6B2E] border-b-2 border-[#FFC107] text-white text-[13px]">
         <div className="max-w-7xl mx-auto px-4 flex justify-end items-center h-8">
           <div className="flex items-center gap-4">
-            <SocialIcon href={SITE.social.facebook} label="Facebook">
-              <Facebook size={14} />
-            </SocialIcon>
-            <SocialIcon href={SITE.social.instagram} label="Instagram">
-              <Instagram size={14} />
-            </SocialIcon>
             <SocialIcon
               href={whatsAppUrl("Hi droptaxi.live, I need a taxi booking")}
               label="WhatsApp"

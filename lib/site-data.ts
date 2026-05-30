@@ -9,10 +9,6 @@ export const SITE = {
   description:
     "droptaxi.live provides convenient one way and outstation cab services across Tamil Nadu, Karnataka, Kerala and nearby regions. Well maintained vehicles, fair pricing and 24/7 booking support.",
   areas: ["Tamil Nadu", "Karnataka", "Kerala"],
-  social: {
-    facebook: "https://www.facebook.com/nonstopdroptaxi",
-    instagram: "https://www.instagram.com/nonstopdroptaxi",
-  },
   /** Default / Mini one-way driver bata (legacy references). */
   driverBata: 400,
   minKmOneWay: 150,

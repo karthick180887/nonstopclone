@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import {
   SITE,
@@ -75,9 +75,6 @@ export default function Footer() {
             Reliable one way taxi and outstation cab services across Tamil Nadu, Kerala and Karnataka.
           </p>
           <div className="flex gap-3 mt-4">
-            <a href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="droptaxi.live Facebook" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
-              <Facebook size={16} />
-            </a>
             <a
               href={whatsAppUrl("Hi, I need taxi booking")}
               target="_blank"
@@ -86,9 +83,6 @@ export default function Footer() {
               className="bg-[#25D366] hover:scale-110 p-2 rounded-full transition"
             >
               <WhatsAppIcon size={16} className="text-white" />
-            </a>
-            <a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="droptaxi.live Instagram" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
-              <Instagram size={16} />
             </a>
           </div>
         </div>

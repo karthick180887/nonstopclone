@@ -27,5 +27,30 @@
   status = 301
   force = true
 
+# Legacy domain → canonical (works when both domains point to this Netlify site)
+[[redirects]]
+  from = "https://www.nonstopdroptaxi.com/*"
+  to = "https://www.droptaxi.live/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://nonstopdroptaxi.com/*"
+  to = "https://www.droptaxi.live/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.nonstopdroptaxi.com/*"
+  to = "https://www.droptaxi.live/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://nonstopdroptaxi.com/*"
+  to = "https://www.droptaxi.live/:splat"
+  status = 301
+  force = true
+
 [functions]
   node_bundler = "esbuild"
