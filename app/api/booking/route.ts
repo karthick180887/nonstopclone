@@ -4,6 +4,18 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
 
+    const name = String(body.name ?? "").trim();
+    const phone = String(body.phone ?? "").trim();
+    const pickup = String(body.pickup ?? "").trim();
+    const drop = String(body.drop ?? "").trim();
+
+    if (!name || !phone || !pickup || !drop) {
+      return NextResponse.json(
+        { success: false, message: "Name, phone, pickup, and drop are required." },
+        { status: 400 }
+      );
+    }
+
     const botToken = process.env.TELEGRAM_BOT_TOKEN;
     const chatId = process.env.TELEGRAM_CHAT_ID;
 
@@ -20,10 +32,10 @@ export async function POST(request: Request) {
     const message = [
       "New Taxi Booking",
       "",
-      `Name: ${body.name ?? "-"}`,
-      `Phone: ${body.phone ?? "-"}`,
-      `Pickup: ${body.pickup ?? "-"}`,
-      `Drop: ${body.drop ?? "-"}`,
+      `Name: ${name}`,
+      `Phone: ${phone}`,
+      `Pickup: ${pickup}`,
+      `Drop: ${drop}`,
       `Date: ${body.date ?? "-"}`,
       `Time: ${body.time ?? "-"}`,
       `Trip Type: ${body.tripType ?? "-"}`,

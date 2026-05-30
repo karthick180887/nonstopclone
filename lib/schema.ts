@@ -7,7 +7,9 @@ export function taxiServiceSchema() {
     name: SITE.name,
     url: SITE.url,
     telephone: SITE.phoneTel,
+    email: SITE.email,
     description: SITE.description,
+    image: `${SITE.url}/assets/banners/nonstop-hero.avif`,
     areaServed: SITE.areas.map((name) => ({
       "@type": "AdministrativeArea",
       name,

@@ -75,7 +75,7 @@ export default function Footer() {
             Reliable one way taxi and outstation cab services across Tamil Nadu, Kerala and Karnataka.
           </p>
           <div className="flex gap-3 mt-4">
-            <a href="#" aria-label="droptaxi.live Facebook" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
+            <a href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="droptaxi.live Facebook" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
               <Facebook size={16} />
             </a>
             <a
@@ -87,11 +87,8 @@ export default function Footer() {
             >
               <WhatsAppIcon size={16} className="text-white" />
             </a>
-            <a href="#" aria-label="droptaxi.live Instagram" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
+            <a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="droptaxi.live Instagram" className="bg-[#1E293B] hover:bg-[#334155] p-2 rounded-full transition">
               <Instagram size={16} />
-            </a>
-            <a href="#" aria-label="droptaxi.live on X" className="bg-[#1E293B] p-2 rounded-full hover:bg-black transition">
-              <span className="text-xs font-bold">𝕏</span>
             </a>
           </div>
         </div>

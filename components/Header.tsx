@@ -7,7 +7,7 @@ import { Facebook, Instagram, Menu, PhoneCall, X } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { NAV_LINKS, SITE } from "@/lib/site-data";
 import MobileMenu from "./MobileMenu";
-import { cn } from "@/lib/utils";
+import { cn, whatsAppUrl } from "@/lib/utils";
 
 function SocialIcon({
   href,
@@ -48,11 +48,8 @@ export default function Header() {
             <SocialIcon href={SITE.social.instagram} label="Instagram">
               <Instagram size={14} />
             </SocialIcon>
-            <SocialIcon href="#" label="X">
-              <span className="text-xs font-bold">𝕏</span>
-            </SocialIcon>
             <SocialIcon
-              href={`https://wa.me/${SITE.phoneWa}?text=${encodeURIComponent("Hi droptaxi.live, I need a taxi booking")}`}
+              href={whatsAppUrl("Hi droptaxi.live, I need a taxi booking")}
               label="WhatsApp"
               className="text-white hover:text-[#25D366]"
             >

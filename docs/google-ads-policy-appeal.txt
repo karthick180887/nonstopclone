@@ -5,14 +5,43 @@ Status you reported:
 - Compromised Site: Under appeal (In progress)
 - Malicious software: Not eligible
 - Campaign published but cannot run
+- Google Ads Community post removed (Irrelevant Content) — NOT the same as ads appeal
 
 Final URL in ads:
 https://www.droptaxi.live/
 
 ---
 
-APPEAL TEXT (paste in Policy Manager)
--------------------------------------
+IMPORTANT: COMMUNITY POST REMOVAL (May 28, 2026)
+------------------------------------------------
+Your thread titled "https://www.droptaxi.live/" was removed from Google Ads
+Community for "Irrelevant Content". This is FORUM moderation only.
+
+What it does NOT do:
+- Does NOT remove your website from Google Search
+- Does NOT cancel your Policy Manager appeal
+- Does NOT automatically suspend your Ads account
+
+What likely triggered removal:
+- Thread title was ONLY a URL (looks like spam/self-promotion)
+- Post may have been appeal text with no real question
+- Community is for Q&A, not "please review my site"
+
+What to do:
+1. Do NOT repost the same URL as a thread title
+2. Do NOT use Community to appeal Compromised Site — use Policy Manager only
+3. If you need community help later, use a descriptive title and one question
+   (see COMPLIANT COMMUNITY POST below)
+4. There is no reliable "undo" for removed community posts — ignore this email
+   for ads purposes and focus on Policy Manager
+
+---
+
+APPEAL TEXT (paste in Policy Manager — NOT Community)
+-----------------------------------------------------
+
+Go to: Google Ads → Campaigns → Ads & assets → Policy details → Appeal
+(or Tools → Policy manager)
 
 Subject: Policy Review Request – Compromised Site + Malicious Software – https://www.droptaxi.live/
 
@@ -44,6 +73,28 @@ Thank you.
 
 ---
 
+COMPLIANT COMMUNITY POST (only if first appeal fails — wait 1+ week)
+----------------------------------------------------------------------
+
+Title: Compromised Site disapproval after domain migration — what should I verify?
+
+Body:
+My Search campaign final URL is https://www.droptaxi.live/ (taxi booking site).
+Ads were disapproved for Compromised Site and Malicious software.
+
+I already:
+- Fixed canonical/OG tags to match the final URL (removed old domain references)
+- Redeployed on Netlify with cache cleared
+- Confirmed only gtag and first-party scripts load
+- Submitted an appeal via Policy Manager
+
+Question: After fixing metadata, how long should I wait before a second appeal,
+and are there other checks Googlebot looks for on Next.js sites?
+
+(Do not paste appeal letters. Do not post URL-only titles.)
+
+---
+
 IF REJECTED AGAIN (follow-up)
 -----------------------------
 
@@ -53,13 +104,15 @@ Please provide the exact affected URL/path, redirect chain, or malware sample de
 
 CHECKLIST BEFORE RE-APPEAL
 ------------------------
+[x] Live canonical/og:url = https://www.droptaxi.live (verified May 30, 2026)
 [ ] Search Console property added for https://www.droptaxi.live/
 [ ] No Security Issues / Manual Actions open
 [ ] Safe Browsing: no issues for droptaxi.live
 [ ] Ads final URL = https://www.droptaxi.live/ (not Netlify subdomain only)
-[ ] No links in page source to old/compromised domains
+[x] No nonstopdroptaxi.com in page source metadata (live verified)
 [ ] Clear cache + redeploy after code fix
 [ ] Wait 24-72h after deploy before second appeal
+[ ] Do NOT post appeals in Google Ads Community
 
 ---
 
@@ -71,4 +124,4 @@ https://www.nonstopdroptaxi.com
 This can cause Google to associate your ad destination with another domain history.
 Code fix applied: SITE.url -> https://www.droptaxi.live
 
-After deploy, verify page source no longer contains nonstopdroptaxi.com.
+Live site now serves correct metadata (verified).
