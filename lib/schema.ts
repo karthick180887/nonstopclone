@@ -14,7 +14,6 @@ export function taxiServiceSchema() {
       "@type": "AdministrativeArea",
       name,
     })),
-    sameAs: [SITE.social.facebook, SITE.social.instagram],
   };
 }
 

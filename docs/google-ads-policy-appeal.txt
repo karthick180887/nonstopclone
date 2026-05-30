@@ -116,12 +116,18 @@ CHECKLIST BEFORE RE-APPEAL
 
 ---
 
-LIKELY ROOT CAUSE FOUND
------------------------
-Live page previously exposed canonical/metadata pointing to:
-https://www.nonstopdroptaxi.com
+LIKELY ROOT CAUSE (UPDATED May 30, 2026)
+----------------------------------------
+1) OLD DOMAIN STILL LIVE: https://www.nonstopdroptaxi.com/ returns 200 on Netlify.
+   Google may treat droptaxi.live as a duplicate/related site to a previously flagged domain.
+   ACTION: 301 redirect nonstopdroptaxi.com → https://www.droptaxi.live/ (or take old site offline).
 
-This can cause Google to associate your ad destination with another domain history.
-Code fix applied: SITE.url -> https://www.droptaxi.live
+2) DEPLOY NOT LIVE: Security fixes (commit 76ac48e) are committed but NOT pushed/deployed.
+   Live droptaxi.live still serves May 27 cached build (no middleware, no CSP headers).
 
-Live site now serves correct metadata (verified).
+3) SCHEMA CROSS-BRAND: sameAs pointed to facebook/instagram "nonstopdroptaxi" profiles.
+   ACTION: Removed sameAs from JSON-LD to decouple from legacy brand.
+
+4) Prior canonical pointed to nonstopdroptaxi.com — fixed in code, must redeploy.
+
+After deploy + old domain redirect, wait 48–72h, then submit NEW appeal in Policy Manager.

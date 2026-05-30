@@ -8,5 +8,24 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# Canonical host: always serve www.droptaxi.live
+[[redirects]]
+  from = "https://droptaxi.live/*"
+  to = "https://www.droptaxi.live/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://droptaxi.live/*"
+  to = "https://www.droptaxi.live/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.droptaxi.live/*"
+  to = "https://www.droptaxi.live/:splat"
+  status = 301
+  force = true
+
 [functions]
   node_bundler = "esbuild"

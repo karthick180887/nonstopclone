@@ -1,0 +1,12 @@
+# Deploy this folder to the nonstopdroptaxi.com Netlify site
+#
+# Steps:
+# 1. Netlify → Add new site → Deploy manually, OR open the existing nonstopdroptaxi.com site
+# 2. Site settings → Build & deploy → Set base directory to this folder OR drag-drop public/
+# 3. Link custom domain www.nonstopdroptaxi.com + nonstopdroptaxi.com
+# 4. Clear cache and deploy
+#
+# Result: all traffic 301 → https://www.droptaxi.live/
+
+[build]
+  publish = "public"
